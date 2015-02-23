@@ -18,13 +18,29 @@ http://nodejs.org/api/
   ### npm
   * install
   * init package.json
-  install --save
+  * install --save
+
+## Need to wrap your head around Node js
+
+Try these quick code challanges to wrap you head around node JS 
+
+### Guess the number:
 
 Write a simple number guessing game as you did in Codecademy using these modules:
- https://www.npmjs.com/package/readline-sync
- https://www.npmjs.com/package/chalk
+ 
+ * https://www.npmjs.com/package/readline-sync
+ * https://www.npmjs.com/package/chalk
 
-> Convert the TestMyCode framework to run in node js.
+### TestMyCode in Node JS
+
+Convert the TestMyCode framework to run in node js.
+
+
+### Install some modules
+
+Here are some modules that you can install to get use to ```npm``.
+
+Remember that you install modules using npm like this : ```npm install < module_name >```
 
 * https://www.npmjs.com/package/text-animation
 * https://www.npmjs.com/package/figlet
@@ -32,6 +48,9 @@ Write a simple number guessing game as you did in Codecademy using these modules
 * https://www.npmjs.com/package/bash-color
 * https://www.npmjs.com/package/commander
 * https://www.npmjs.com/package/chalk
+
+
+## modules
 
 parameters from the command line
 
