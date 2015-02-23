@@ -22,15 +22,14 @@ Write a simple number guessing game as you did in Codecademy using these modules
  https://www.npmjs.com/package/readline-sync
  https://www.npmjs.com/package/chalk
 
+> Convert the TestMyCode framework to run in node js.
 
-Convert unit testing framework to node
-use some modules from npm
-colors in console 
-https://www.npmjs.com/package/bash-color
-https://www.npmjs.com/package/text-animation
-https://www.npmjs.com/package/figlet
-https://www.npmjs.com/package/commander
-https://www.npmjs.com/package/chalk
+* https://www.npmjs.com/package/text-animation
+* https://www.npmjs.com/package/figlet
+
+* https://www.npmjs.com/package/bash-color
+* https://www.npmjs.com/package/commander
+* https://www.npmjs.com/package/chalk
 
 parameters from the command line
 
