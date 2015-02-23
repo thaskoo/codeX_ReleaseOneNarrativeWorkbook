@@ -4,12 +4,29 @@ This is a companion workbook that will assist you to work through the codeX Narr
 
 Please feel free to contribute to the repository by issueing pull requests.
 
-##Node JS Javascript from the command line
-* run a simple javascript script from the command line
-* console.log
-* using if / else, for
+Please check back here regularly as this will updated regularly.
 
+##Node JS Javascript from the command line
+
+Let's run a simple javascript script from the command line:
+	* Create a file called ```hello.js``` 
+	* copy this text into the file: ```console.log('hello world!');```
+	* Save the file
+	* now run it using ```nodejs hello.js```
+	* what happens?
+
+So what just happend? You liberated your Javascript knowledge from the command line. 
+
+Now proof this to yourself and write some Javascript that use:
+* an ```if``` statement
+* a ```for``` loop
+* write a simple function
+* what else you need to get comfortable
+
+If you can create about 5 different javascript file (.js) files to get more comfortable with Javascript on the command line.
+	
 ##Introduce the Node API
+
 http://nodejs.org/api/
 
 ##modules
