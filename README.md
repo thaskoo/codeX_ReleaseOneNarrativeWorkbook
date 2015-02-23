@@ -1,6 +1,8 @@
 # codeX_Feb2015NarrativeWorkbook
 
-This is some a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references to information that will assist you in your journey will be published in the repository.
+This is a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references to information that will assist you in your journey will be published in the repository.
+
+Please feel free to contribute to the repository by issueing pull requests.
 
 ##Node JS Javascript from the command line
 * run a simple javascript script from the command line
