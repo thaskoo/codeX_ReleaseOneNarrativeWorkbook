@@ -2,13 +2,32 @@
 
 This is a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references to information that will assist you in your journey will be published in the repository.
 
-Please feel free to contribute to the repository by issueing pull requests.
+Please:
 
-Please check back here regularly as this will updated regularly.
+* contribute to the repository by issueing pull requests.
+* check back here regularly as this will updated regularly.
+
+##Installing Node
+
+On Ubuntu you can install Node JS from the command line using ```apt-get```.
+
+You should already have it installed on your laptop if you completed the codeX February 2015 intro.
+
+The installation instructions are as follows:
+
+* sudo apt-get install node-legacy 
+* sudo apt-get install npm
+
+Open a terminal window:
+
+* type ```nodejs``` and press enter - you should now be in a Node JS console - you should get no errors. (on a non Ubuntu machine the command is called ```node```). Use ctrl-C to get out of it
+* type ```npm```
+
 
 ##Node JS Javascript from the command line
 
 Let's run a simple javascript script from the command line:
+
 	* Create a file called ```hello.js``` 
 	* copy this text into the file: ```console.log('hello world!');```
 	* Save the file
