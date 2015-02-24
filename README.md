@@ -7,6 +7,10 @@ Please:
 * contribute to the repository by issueing pull requests.
 * check back here regularly as this will updated regularly.
 
+## Javascript on the command line
+
+So far all the Javascript you wrote ran in a web browser. That don't need to be the case one can run Javascript in the command line and as a result use Javascript to program much more than buttons, fields and elements in the browser. A world of programming Web Servers, Robots and Databases to name but a few options awaits.
+
 ##Installing Node
 
 On Ubuntu you can install Node JS from the command line using ```apt-get```.
@@ -15,13 +19,16 @@ You should already have it installed on your laptop if you completed the codeX F
 
 The installation instructions are as follows:
 
-* sudo apt-get install node-legacy 
-* sudo apt-get install npm
+* ```sudo apt-get install node-legacy``` 
+* ```sudo apt-get install npm```
 
 Open a terminal window:
 
 * type ```nodejs``` and press enter - you should now be in a Node JS console - you should get no errors. (on a non Ubuntu machine the command is called ```node```). Use ctrl-C to get out of it
-* type ```npm```
+* type ```npm``` you should see some information about npm on the console
+
+Now you are ready to use Javascript from the command line. 
+
 
 
 ##Node JS Javascript from the command line
