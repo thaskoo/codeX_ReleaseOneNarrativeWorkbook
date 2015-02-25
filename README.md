@@ -12,6 +12,8 @@ Note:
 
 So far all the Javascript you wrote ran in a web browser. That don't need to be the case, one can run Javascript on the command line and use it to program much more than buttons, fields and elements in the browser. A world of programming Web Servers, Robots and Databases to name but a few options awaits.
 
+You can read more about Node JS here: http://eloquentjavascript.net/20_node.html
+
 ##Installing Node
 
 On Ubuntu you can install Node JS from the command line using ```apt-get```.
@@ -63,7 +65,7 @@ Install it in the command line:
 
 ## Asyncronous
 
-One thing to note is that Node JS is asyncronous by nature and a concept using call backs is used heavily.
+One thing to note is that Node JS is asyncronous by nature and a concept using callbacks is used heavily.
 
 It does take some time to get use to, but you will get there.
 
