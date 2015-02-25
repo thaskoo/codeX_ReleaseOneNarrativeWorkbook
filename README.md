@@ -50,10 +50,15 @@ Now proof this to yourself and write some Javascript that use:
 
 If you can create about 5 different javascript file (.js) files to get more comfortable with Javascript on the command line.
 
+## Node intro
+
+
+
 ## Asyncronous
 
 One thing to note is that Node JS is asyncronous by nature and a concept using call backs is used heavily.
 
+It does take some time to get use to, but you will get there.
 
 	
 ##Introduce the Node API
@@ -85,7 +90,7 @@ A few usefull npm commands to look into are:
   * ```npm install <library name>```
   * ```npm install -g <library name>```
   * ```npm init package.json```
-  * ```install --save``
+  * ```install --save```
 
 ## Need to wrap your head around Node js
 
