@@ -52,7 +52,10 @@ If you can create about 5 different javascript file (.js) files to get more comf
 
 ## Node intro
 
-Let's enrol to http://nodeschool.io/ now by installing on the ```learnyounode``` course. For now you only complete the first 6 lessons, do the rest later. It get a bit more hairy from lesson 7 onwards, but you will master that soon. The first 6 lessons will serve you well for now.
+Let's enrol to http://nodeschool.io/ now by installing on the ```learnyounode``` course. 
+***Only complete the first 6 lessons, do the rest later.** 
+
+The first 6 lessons will serve you well for now.
 
 Install it in the command line:
 
