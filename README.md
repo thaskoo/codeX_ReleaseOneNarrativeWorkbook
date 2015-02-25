@@ -125,8 +125,9 @@ module.export = function(name){
 	
 }
 ```
+If the above is in a file called greeter2.js.
 
-You can use it from greetings_test2.js in the same folder as if the above is in a file called greeter2.js like this.
+You can use it from greetings_test2.js in the same folder, like this:
 
 ```
 
