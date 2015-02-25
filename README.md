@@ -227,6 +227,8 @@ Having a good handle on JQuery is required going forward
 * Reading
 * Writing
 * Sync vs Async
+* Create JSON file
+* Read JSON file
 
 ##Processing the data:
 * Basic data modelling
