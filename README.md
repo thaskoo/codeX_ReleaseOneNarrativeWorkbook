@@ -34,10 +34,10 @@ Now you are ready to use Javascript from the command line.
 
 Let's run a simple javascript script from the command line:
 
-	* Create a file called ```hello.js``` 
-	* copy this text into the file: ```console.log('hello world!');```
+	* Create a file called 'hello.js' 
+	* copy this text into the file: 'console.log('hello world!');'
 	* Save the file
-	* now run it using ```nodejs hello.js```
+	* now run it using 'nodejs hello.js'
 	* what happens?
 
 So what just happend? You liberated your Javascript knowledge from the command line. 
