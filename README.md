@@ -1,4 +1,4 @@
-# codeX_Feb2015NarrativeWorkbook
+#Narrative workbook
 
 This is a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references provided will assist you in your journey will be published in the repository.
 
