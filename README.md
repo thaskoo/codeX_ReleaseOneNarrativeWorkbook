@@ -91,21 +91,54 @@ In Node things are different and it use the CommonJS module pattern, which handl
 
 You can create a module that is like an Object literal like this:
 
-```export.sayHello = function(){
+```
+export.sayHello = function(){
 
 }
-
 export.sayBye = function(){
-}```
+}
+```
 
 If the above is in a file called greetings.js
 
 You can use it from greetings_test.js in the same folder like this.
 
-```var greeter = require('./greetings'); 
+```
+var greeter = require('./greetings'); 
 	
-   greeter.sayHello();	```
+greeter.sayHello();
+```
 
+You can create a module that is more like a constructor function like this:
+
+```
+module.export = function(name){
+	this.name = "Andre";
+	
+	this.sayHello = function(){
+		console.log('Hi, I am ' + name);
+	}
+	
+	this.sayBye = function(){
+		console.log('Bye!');
+	}
+	
+}
+```
+
+You can use it from greetings_test2.js in the same folder as if the above is in a file called greeter2.js like this.
+
+```
+
+var Greeter = require('./greeter2'); 
+	
+var greeter = new Greeter("Andy");
+
+greeter.sayHello();
+
+```
+
+When you create your own modules you always need to use a relative path starting with a ```./``` - globally installed modules don't need that.
 
 > Some details can be found here:
 >  http://nodejs.org/api/modules.html
