@@ -6,9 +6,11 @@ Note is that Node JS is asyncronous by nature and the concept using callbacks is
 
 Soon you will be introduced to callbacks like this:
 
-```function(err, value){
+```
+function(err, value){
 
-}```
+}
+```
 
 ##Node API
 
