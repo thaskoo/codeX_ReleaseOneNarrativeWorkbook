@@ -28,6 +28,10 @@ Install it in the command line:
 
 ```npm install -g learnyounode```
 
+once done execute: ```learnyounode``` in the console and follow the instructions
+
+**remember to do only the first 6 exercises**
+
 Here are some [background information](NodeBackground.md) of concepts you would have met in Nodeschool
 
 #Try this
