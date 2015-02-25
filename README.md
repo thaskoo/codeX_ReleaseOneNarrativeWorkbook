@@ -92,9 +92,25 @@ A few usefull npm commands to look into are:
   * ```npm init package.json```
   * ```install --save```
 
+### Try these fun modules:
+
+Here are two modules that I would like you to give a try.
+
+* https://www.npmjs.com/package/text-animation
+* https://www.npmjs.com/package/figlet
+ 
+Be sure to create a ```NarrativeWorkbook``` folder in your porjects folder.
+* in that create a ```modules101``` folder
+* then type ```npm init``` - follow along, you will need to press enter a few times, you can change the defaults if you like
+* in the ```modules101``` folder there should be package.json file - see what it looks like.
+* node install the figlet module using this command: ```npm install --save figlet```
+* check how the package file changed
+* now write a program using the figlet module to display 'codeX is cool!'
+* Now use the text-animation module and animate 'codeX is cool'. Pro-tip: you'll need to install it first
+
 ## Need to wrap your head around Node js
 
-Try these quick code challanges to wrap you head around node JS 
+Try these code challanges to wrap you head around node JS 
 
 ### Guess the number:
 
@@ -105,39 +121,27 @@ Write a simple number guessing game as you did in Codecademy using these modules
 
 ### TestMyCode in Node JS
 
-Convert the TestMyCode framework to run in node js.
+Convert the TestMyCode framework to run in node js. You will quickly see there is no DOM now.
 
-
-### Install some modules
-
-Here are some modules that you can install to get use to ```npm``.
-
-Remember that you install modules using npm like this : ```npm install < module_name >```
-
-* https://www.npmjs.com/package/text-animation
-* https://www.npmjs.com/package/figlet
+But get Red & Green on the command line using one of these modules on the console
 
 * https://www.npmjs.com/package/bash-color
-* https://www.npmjs.com/package/commander
 * https://www.npmjs.com/package/chalk
 
+You will need to make TestMyCode a module so that you can easily import it into your test scripts.
+Use it to test a few functions.
+
+### Word fun
+
+Create a utility using TDD (use TestMyCode) that is a module that has these functions:
+	* makeUpper - take a sentence and the index of the word in the sentence to make uppercase, it then make the correct word uppercase
+	* makeLower - take a sentence and the index of the word in the sentence to make lowercase, it then make the correct word lowercase
+  	* capitalize - take a sentence and the index of the word in the sentence to capitalize, it then capitalize the correct word.
 
 ## modules
 
 parameters from the command line
 
-## create a module
-module.function name = function(){}
-module.export = <constructor function>
-
-use the module just created
-
-some basic javascript on the command line a module called utilities:
-  * makeUpper - take a sentence and the index of the word in the sentence to make uppercase
-  * makeLower - take a sentence and the index of the word in the sentence to make lowercase
-  * capitalize - take a sentence and the index of the word in the sentence to capitalize
-
-	
 ## Intro to JQuery
 * Do Codecademy if you are not confortable with JQuery
 * Do Red & Green using JQuery
