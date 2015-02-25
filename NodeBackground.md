@@ -52,7 +52,8 @@ greeter.sayHello();
 
 You can create a module that is more like a constructor function like this:
 
-```
+```javascript
+
 module.export = function(name){
 	this.name = "Andre";
 	
