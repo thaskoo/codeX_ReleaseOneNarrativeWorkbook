@@ -1,15 +1,16 @@
 # codeX_Feb2015NarrativeWorkbook
 
-This is a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references to information that will assist you in your journey will be published in the repository.
+This is a companion workbook that will assist you to work through the codeX Narrative that is to be provided. Resources and references provided will assist you in your journey will be published in the repository.
 
-Please:
+Note:
 
-* contribute to the repository by issueing pull requests.
-* check back here regularly as this will updated regularly.
+* This is a living document, it will change over time
+* please contribute to this workbook by pull requests
+* check back here regularly for new information
 
 ## Javascript on the command line
 
-So far all the Javascript you wrote ran in a web browser. That don't need to be the case one can run Javascript in the command line and as a result use Javascript to program much more than buttons, fields and elements in the browser. A world of programming Web Servers, Robots and Databases to name but a few options awaits.
+So far all the Javascript you wrote ran in a web browser. That don't need to be the case, one can run Javascript on the command line and use it to program much more than buttons, fields and elements in the browser. A world of programming Web Servers, Robots and Databases to name but a few options awaits.
 
 ##Installing Node
 
@@ -28,8 +29,6 @@ Open a terminal window:
 * type ```npm``` you should see some information about npm on the console
 
 Now you are ready to use Javascript from the command line. 
-
-
 
 ##Node JS Javascript from the command line
 
@@ -50,18 +49,43 @@ Now proof this to yourself and write some Javascript that use:
 * what else you need to get comfortable
 
 If you can create about 5 different javascript file (.js) files to get more comfortable with Javascript on the command line.
+
+## Asyncronous
+
+One thing to note is that Node JS is asyncronous by nature and a concept using call backs is used heavily.
+
+
 	
 ##Introduce the Node API
 
-http://nodejs.org/api/
+Over and above the normal capabilities of Javascript Node JS can do loads more things like:
+
+* reading and creating files on disk
+* making HTTP calls
+* host a HTTP/TCP server
+
+If you are curious about what is possible have a look here: http://nodejs.org/api/
+
+But don't get bogged down in the details to much at this stage.
 
 ##modules
-  http://nodejs.org/api/modules.html
+
+To reuse Javascript code in the Web browser is easy one just need to reference the code in the right order using using a script tag.
+
+In Node things are different and it use the CommonJS module pattern, which handle dependencies between your different pieces of Javascript code.
+
+>   http://nodejs.org/api/modules.html
   
-  ### npm
-  * install
-  * init package.json
-  * install --save
+One of the major things of Node is that there are loads of third party libraries out there that you can reuse. These libraries allows you to access databases, create API's or even create a Robot.
+
+The central library of libraries is called, http://npmjs.org, you use the ```npm``` command to install libraries from there.
+  
+A few usefull npm commands to look into are:
+
+  * ```npm install <library name>```
+  * ```npm install -g <library name>```
+  * ```npm init package.json```
+  * ```install --save``
 
 ## Need to wrap your head around Node js
 
