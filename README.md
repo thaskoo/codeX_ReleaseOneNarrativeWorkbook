@@ -42,7 +42,7 @@ Be sure to create a ```NarrativeWorkbook``` folder in your projects folder.
 * now write a program using the figlet module to display 'codeX is cool!'
 * Now use the text-animation module and animate 'codeX is cool'. Pro-tip: you'll need to install it first
 
-If you feel you need some more practice with Node JS before you move on try to do some [these exercises]()
+If you feel you need some more practice with Node JS before you move on try to do some [these exercises](NodeExercises.md)
 
 #Things to come
 
