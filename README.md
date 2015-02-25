@@ -28,7 +28,13 @@ Install it in the command line:
 
 ```npm install -g learnyounode```
 
-Once you are done with that try using these two modules:
+Here are some [background information](NodeBackground.md) of concepts you would have met in Nodeschool
+
+#Try this
+
+Now that you have a better idea about what Node JS are try to install and use some modules from npmjs.org.
+
+These modules to try out is:
 
 * https://www.npmjs.com/package/text-animation
 * https://www.npmjs.com/package/figlet
@@ -40,6 +46,7 @@ Be sure to create a ```NarrativeWorkbook``` folder in your projects folder.
 * node install the figlet module using this command: ```npm install --save figlet```
 * check how the package file changed
 * now write a program using the figlet module to display 'codeX is cool!'
+* take a look on the figlet npmjs.org page to see how to use it.
 * Now use the text-animation module and animate 'codeX is cool'. Pro-tip: you'll need to install it first
 
 If you feel you need some more practice with Node JS before you move on try to do some [these exercises](NodeExercises.md)
