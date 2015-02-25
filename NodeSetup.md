@@ -38,33 +38,21 @@ Now proof this to yourself and write some Javascript that use:
 
 If you can create about 5 different javascript file (.js) files to get more comfortable with Javascript on the command line.
 
-## Node intro
-
-Let's enrol to http://nodeschool.io/ now by installing on the ```learnyounode``` course. 
-***Only complete the first 6 lessons, do the rest later.** 
-
-The first 6 lessons will serve you well for now.
-
-Install it in the command line:
-
-```npm install -g learnyounode```
-
 ## Asyncronous
 
 One thing to note is that Node JS is asyncronous by nature and a concept using callbacks is used heavily.
 
 It does take some time to get use to, but you will get there.
 
-Soon callbacks like this:
+Soon you will be introduced to callbacks like this:
 
 ```function(err, value){
+
 }```
-
-Will become 2nd nature or a big annoyance to you ;-)
 	
-##Introduce the Node API
+##Node API
 
-Over and above the normal capabilities of Javascript Node JS can do loads more things like:
+Over and above the normal capabilities of Javascript, Node JS can do loads more things like:
 
 * reading and creating files on disk
 * making HTTP calls
@@ -76,7 +64,7 @@ But don't get bogged down in the details to much at this stage.
 
 ##modules
 
-To reuse Javascript code in the Web browser is easy one just need to reference the code in the right order using using a script tag.
+To reuse Javascript code in the Web browser is easy one just need to reference the code in the right order using using a ```script``` tag.
 
 In Node things are different and it use the CommonJS module pattern, which handle dependencies between your different pieces of Javascript code.
 
