@@ -89,7 +89,26 @@ To reuse Javascript code in the Web browser is easy one just need to reference t
 
 In Node things are different and it use the CommonJS module pattern, which handle dependencies between your different pieces of Javascript code.
 
->   http://nodejs.org/api/modules.html
+You can create a module that is like an Object literal like this:
+
+```export.sayHello = function(){
+
+}
+
+export.sayBye = function(){
+}```
+
+If the above is in a file called greetings.js
+
+You can use it from greetings_test.js in the same folder like this.
+
+```var greeter = require('./greetings'); 
+	
+   greeter.sayHello();	```
+
+
+> Some details can be found here:
+>  http://nodejs.org/api/modules.html
   
 One of the major things of Node is that there are loads of third party libraries out there that you can reuse. These libraries allows you to access databases, create API's or even create a Robot.
 
@@ -109,7 +128,7 @@ Here are two modules that I would like you to give a try.
 * https://www.npmjs.com/package/text-animation
 * https://www.npmjs.com/package/figlet
  
-Be sure to create a ```NarrativeWorkbook``` folder in your porjects folder.
+Be sure to create a ```NarrativeWorkbook``` folder in your projects folder.
 * in that create a ```modules101``` folder
 * then type ```npm init``` - follow along, you will need to press enter a few times, you can change the defaults if you like
 * in the ```modules101``` folder there should be package.json file - see what it looks like.
@@ -118,13 +137,24 @@ Be sure to create a ```NarrativeWorkbook``` folder in your porjects folder.
 * now write a program using the figlet module to display 'codeX is cool!'
 * Now use the text-animation module and animate 'codeX is cool'. Pro-tip: you'll need to install it first
 
+**remember to commit to github regularly**
+
 ## Need to wrap your head around Node js
 
-Try these code challanges to wrap you head around node JS 
+Try these code challanges to wrap you head around node JS.
+
+Be sure to create a ```NarrativeWorkbook``` folder in your projects folder. And do the challenges in there, be sure to commit to github regularly.
 
 ### Guess the number:
 
-Write a simple number guessing game as you did in Codecademy using these modules:
+Write a simple number guessing game :
+* where your program generate a random number less than 100 
+* the player should guess the number by entering on the command line
+* if the number is to low let the user know with an orange error message
+* if too high let the user know with a red error message
+* if correct display to the user 'Yeah, the correct number is <the number they guessed>. It took you <number of guesses> guesses!'
+
+Use these module:
  
  * https://www.npmjs.com/package/readline-sync
  * https://www.npmjs.com/package/chalk
