@@ -37,6 +37,6 @@ Use it to test a few functions.
 ### Word fun
 
 Create a utility using TDD (use TestMyCode) that is a module that has these functions:
-	* makeUpper - take a sentence and the index of the word in the sentence to make uppercase, it then make the correct word uppercase
-	* makeLower - take a sentence and the index of the word in the sentence to make lowercase, it then make the correct word lowercase
-  	* capitalize - take a sentence and the index of the word in the sentence to capitalize, it then capitalize the correct word.
+* makeUpper - take a sentence and the index of the word in the sentence to make uppercase, it then make the correct word uppercase
+* makeLower - take a sentence and the index of the word in the sentence to make lowercase, it then make the correct word lowercase
+* capitalize - take a sentence and the index of the word in the sentence to capitalize, it then capitalize the correct word.
