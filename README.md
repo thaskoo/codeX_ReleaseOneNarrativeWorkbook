@@ -16,9 +16,19 @@ You can read more about Node JS here: http://eloquentjavascript.net/20_node.html
 
 You need to have node installed locally: [Node Setup](NodeSetup.md)
 
-Once you are happy with your Node inistallation do this:
+##Node school
 
-Try using these two modules:
+Now enrol to http://nodeschool.io/ by installing the ```learnyounode``` course. 
+
+***Only complete the first 6 lessons, do the rest later.** 
+
+The first 6 lessons will serve you well for now.
+
+Install it in the command line:
+
+```npm install -g learnyounode```
+
+Once you are done with that try using these two modules:
 
 * https://www.npmjs.com/package/text-animation
 * https://www.npmjs.com/package/figlet
@@ -32,6 +42,9 @@ Be sure to create a ```NarrativeWorkbook``` folder in your projects folder.
 * now write a program using the figlet module to display 'codeX is cool!'
 * Now use the text-animation module and animate 'codeX is cool'. Pro-tip: you'll need to install it first
 
+If you feel you need some more practice with Node JS before you move on try to do some [these exercises]()
+
 #Things to come
 
-Here are a high level overview of things to come later in this release, the details will be provided
+Here are a high level [overview](HighlevelOverview.md) of things to come later in this release, the details will be provided
+
