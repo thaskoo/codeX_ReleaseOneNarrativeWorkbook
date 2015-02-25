@@ -52,7 +52,7 @@ If you can create about 5 different javascript file (.js) files to get more comf
 
 ## Node intro
 
-Let's enrol to http://nodeschool.io/ now by installing on the learnyounode course. For now you only complete the first 6 lessons, do the rest later. It get a bit more hairy from lesson 7 onwards, but you will master that soon.
+Let's enrol to http://nodeschool.io/ now by installing on the ```learnyounode``` course. For now you only complete the first 6 lessons, do the rest later. It get a bit more hairy from lesson 7 onwards, but you will master that soon. The first 6 lessons will serve you well for now.
 
 Install it in the command line:
 
@@ -148,17 +148,18 @@ Create a utility using TDD (use TestMyCode) that is a module that has these func
 	* makeLower - take a sentence and the index of the word in the sentence to make lowercase, it then make the correct word lowercase
   	* capitalize - take a sentence and the index of the word in the sentence to capitalize, it then capitalize the correct word.
 
-## modules
-
-parameters from the command line
 
 ## Intro to JQuery
-* Do Codecademy if you are not confortable with JQuery
-* Do Red & Green using JQuery
+
+Having a good handle on JQuery is required going forward
+
+* Do Codecademy if you are not comfortable with JQuery
+* Convert Red & Green to use JQuery - do this in a jquery subfolder in the RedAndGreen project.
 * Animate the red & green transissions
 * Feedback ? How is it different from what you did previously
 
 ## File handling
+
 * Reading
 * Writing
 * Sync vs Async
