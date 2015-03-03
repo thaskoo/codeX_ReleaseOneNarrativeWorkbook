@@ -33,10 +33,10 @@ In Node things are different and it use the CommonJS module pattern, which handl
 You can create a module that is like an Object literal like this:
 
 ```
-export.sayHello = function(){
+exports.sayHello = function(){
 
 }
-export.sayBye = function(){
+exports.sayBye = function(){
 }
 ```
 
@@ -54,7 +54,7 @@ You can create a module that is more like a constructor function like this:
 
 ```javascript
 
-module.export = function(name){
+module.exports = function(name){
 	this.name = "Andre";
 	
 	this.sayHello = function(){
