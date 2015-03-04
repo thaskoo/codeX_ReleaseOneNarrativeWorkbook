@@ -200,9 +200,9 @@ You will now create a new module and also use some of NodeJS's built in modules.
 So you module should:
 * find all the files in a folder
 * then read each file in the folder
-* find each row in the folder
-* and then append each row to a list
-* and then ultimately return the list containing all the lines in the files.
+* find each row in each file
+* then append each row to a list 
+* return the list that contains all the lines off all the files.
  
 > For example: 
 > * if there are 3 files in the folder 
