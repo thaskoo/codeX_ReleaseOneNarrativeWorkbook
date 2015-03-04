@@ -104,8 +104,8 @@ The module should be in a file called:
 ## Task 5
 
 Create a module that can read a product file and do two things: 
-* it can give us a list of all the products in the file
-* it can give you the total number of items sold for each product
+* return a list of all the products in the file
+* return the total number of items sold for each product
 
 The module should:
 * be called ```products.js```
