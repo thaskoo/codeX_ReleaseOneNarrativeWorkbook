@@ -74,7 +74,10 @@ So you module should:
 * and then append each row to a list
 * and then ultimately return the list containing all the lines in the files.
  
-> For example: if there are 3 files in the folder you are accessing and each and each file have 3 rows your modules function should return a list containing 9 rows.
+> For example: 
+> * if there are 3 files in the folder 
+> * and each file have 3 rows 
+> your modules should return a list containing 9 rows.
 
 The built in module you should use is called 'fs', you can read more about it here: http://nodejs.org/api/fs.html
 
