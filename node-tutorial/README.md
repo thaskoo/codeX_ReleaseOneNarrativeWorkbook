@@ -96,7 +96,7 @@ The module should be in a file called:
         linesInFilesAsync('/dir/name', function(err, files){
         });  
       ```
-* you can use the folder to test './files/week1' 
+* you can use the folder to test ```./files/week1``` 
 
 
 
