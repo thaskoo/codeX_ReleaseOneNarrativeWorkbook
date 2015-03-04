@@ -153,9 +153,13 @@ var shortWords = words.filter(function(word){
 });
 
 console.log(shortWords);
+//["One", "day", "I", "to", "the"]
+
+//this will print
+//
 ```
 
-```map``` is an easy way to convert/change all the values in a list:
+```map``` is an easy way to convert/change all the values in an Array:
 
 To convert all the entries in a list to uppercase:
 
@@ -167,6 +171,9 @@ var uppercaseWords = words.map(function(word){
 });
 
 console.log(uppercaseWords);
+
+//this will print
+//["ONE", "DAY", "I", "WENT", "TO", "THE", "AQUARIUM"]
 ```
 
 ##Task 4
