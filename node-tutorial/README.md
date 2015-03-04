@@ -60,6 +60,33 @@ high
 
 printed to the screen.
 
+##Usefull functions built into Javascript
+
+### String
+
+As string object in Javascript has a lot of methods that allows you can use.
+
+To see what those are:
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String
+
+One I would like to highlight is:
+
+```split``` - the split function takes a string and split it into different parts using a delimeter
+
+Say for example you have a sentence and I would like to find all the words in the sentence.
+
+```javascript
+var sentence = "One day I went to the aquarium";
+
+//split the sentence into a list of words
+var words = sentence.split(' ');
+
+```
+
+### Array
+
+
 
 ##Task 4
 
