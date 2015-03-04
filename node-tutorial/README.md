@@ -78,20 +78,27 @@ So you module should:
 
 The built in module you should use is called 'fs', you can read more about it here: http://nodejs.org/api/fs.html
 
-You would use one of these 2 function calls on the module:
-* http://nodejs.org/api/fs.html#fs_fs_readdir_path_callback
+**You would use one of these 2 function calls on the module**
+
+To get files in the folder:
 * http://nodejs.org/api/fs.html#fs_fs_readdirsync_path
 
+To get the data in the files:
+* http://nodejs.org/api/fs.html#fs_fs_readfilesync_filename_options
 
 The module should be in a file called:
 * read-folder.js
 * expose 2 methods with parameters:
   * linesInFiles(folderName)
-  * linesInFilesAsync(folderName, callback) - the callback should return 2 parameters ```err``` & ```files```
-    * calling it should look like this: 
+  * linesInFilesAsync(folderName, callback) - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
+      
       ```javascript
         linesInFilesAsync('/dir/name', function(err, files){
         });  
       ```
+* you can use the folder to test './files/week1' 
+
+
+
 
 
