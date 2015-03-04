@@ -98,7 +98,15 @@ The module should be in a file called:
       ```
 * you can use the folder to test ```./files/week1``` 
 
+## Task 5
 
+Create a module that can read a product file and do two things: 
+* it can give us a list of all the products in the file
+* it can give you the total number of items sold for each product
 
-
+The module should:
+* be called ```products.js```
+* have two ***Asyncronous*** methods:
+  * ```productNames``` - returns a list of products
+  * ```productSold``` - returns a list how many of each product is sold
 
