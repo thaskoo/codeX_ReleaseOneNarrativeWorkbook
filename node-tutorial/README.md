@@ -116,9 +116,19 @@ A useful recipe to remember:
 * split the file on using new lines to get each line
 * split each line using a delimeter (either a space ' ' or ',' for example) to get each field
 
-### Array
+### Arrays
 
+So what methods does an Array have?
 
+Ok, go and google this quickly : ```array javascript functions mdn```
+
+> **Top tip** whenever search/google for something about javascript specific syntax by adding 'mdn' to your search criteria you are bound to get some Javascript reference from The Mozilla Developer Network - which is an authority on Javascript syntax.
+
+We will focus on three functions of the Array object:
+
+* ```forEach```
+* ```filter```
+* ```map```
 
 ##Task 4
 
