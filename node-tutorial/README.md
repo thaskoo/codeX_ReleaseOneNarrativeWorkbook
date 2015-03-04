@@ -124,6 +124,9 @@ Ok, go and google this quickly : ```array javascript functions mdn```
 
 > **Top tip** whenever search/google for something about javascript specific syntax by adding 'mdn' to your search criteria you are bound to get some Javascript reference from The Mozilla Developer Network - which is an authority on Javascript syntax.
 
+Using the search above your first hit should be:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
+
 We will focus on three functions of the Array object:
 
 * ```forEach```
