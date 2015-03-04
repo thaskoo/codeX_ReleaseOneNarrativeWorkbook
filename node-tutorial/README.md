@@ -153,10 +153,10 @@ var shortWords = words.filter(function(word){
 });
 
 console.log(shortWords);
-//["One", "day", "I", "to", "the"]
 
 //this will print
-//
+//["One", "day", "I", "to", "the"]
+
 ```
 
 ```map``` is an easy way to convert/change all the values in an Array:
