@@ -3,21 +3,42 @@
 A quick introduction no Node JS.
 
 This will introduce you to using Javascript on the command line using.
+ 
+##Testing what've done
+
+To test that you have done the right thing you need to have th ```mocha``` module installed.
+
+Install it typing this command into a a terminal window:
+
+```sudo npm install -g mocha```
+
+Once the install is done, type ```mocha``` in the same window - you should get a bunch of failing tests.
+
+As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successfull. As you work your way through the Tasks more and more of the tests should start to pass.
 
 ##Task 1
 
 Create file called hello and write 'hello world!' to the console.
 
-Run the program from the command line using: ```nodejs hello.js```
+You can run the program from the command line using: ```nodejs hello.js```
 
+Run ```mocha``` from the command line. At least one test should pass.
 
 ##Task 2
 
 Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console
 
+Run the program from the command line using: ```nodejs filter-numbers.js```
+
+Run ```mocha``` from the command line. At least two tests should pass.
+
 ##Task 3
 
 Follow the instructions inside the users.js file
+
+Run the program from the command line using: ```nodejs users.js```
+
+Run ```mocha``` from the command line. At least three tests should pass.
 
 ## Modules
 
