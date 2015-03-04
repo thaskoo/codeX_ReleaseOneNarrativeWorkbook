@@ -128,6 +128,9 @@ Using the search above your first hit should be:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
 
 We will focus on three functions of the Array object:
+* forEach
+* filter
+* map
 
 ```forEach``` is any easy way to loop through all the entries in a list 
 
@@ -139,6 +142,18 @@ var words = ["One", "day", "I", "went", "to", "the", "aquarium"];
 words.forEach(function(word){
   console.log(word)
 });
+
+// this will write to the console
+
+/**
+"One"
+"day"
+"I"
+"went"
+"to"
+"the"
+"aquarium"
+*/
 ```
 
 ```filter``` is a handy way to find data in an Array
