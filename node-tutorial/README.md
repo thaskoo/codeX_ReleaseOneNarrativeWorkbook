@@ -129,9 +129,45 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 We will focus on three functions of the Array object:
 
-* ```forEach```
-* ```filter```
-* ```map```
+```forEach``` is any easy way to loop through all the entries in a list 
+
+To display all the words in a list you can do this:
+
+```
+var words = ["One", "day", "I", "went", "to", "the", "aquarium"];
+
+words.forEach(function(word){
+  console.log(word)
+});
+```
+
+```filter``` is a handy way to find data in an Array
+
+To find all the words in a sentence shorter or equal to 3 do this:
+
+```
+var words = ["One", "day", "I", "went", "to", "the", "aquarium"];
+
+var shortWords = words.filter(function(word){
+  return word.length <=3;
+});
+
+console.log(shortWords);
+```
+
+```map``` is an easy way to convert/change all the values in a list:
+
+To convert all the entries in a list to uppercase:
+
+```
+var words = ["One", "day", "I", "went", "to", "the", "aquarium"];
+
+var uppercaseWords = words.map(function(word){
+  return word.toUpperCase();
+});
+
+console.log(uppercaseWords);
+```
 
 ##Task 4
 
