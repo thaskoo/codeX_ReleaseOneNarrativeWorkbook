@@ -81,12 +81,21 @@ var sentence = "One day I went to the aquarium";
 
 //split the sentence into a list of words
 var words = sentence.split(' ');
+console.log(words);
+
+//will print to the console
+//["One", "day", "I", "went", "to", "the", "aquarium"]
 
 ```
 
+One usefull trick is that you can split on newline characters by using the ```\n``` character. This is a usefull trick to split a file that contains newline characters into a list of lines.
+
+A useful recipe to remember:
+* read a file
+* split the file on using new lines to get each line
+* split each line using a delimeter to get each field
+
 ### Array
-
-
 
 ##Task 4
 
