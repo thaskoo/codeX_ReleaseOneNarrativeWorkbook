@@ -227,7 +227,7 @@ To get the data in the files:
 
 The module should be in a file called:
 * read-folder.js
-Expose 2 methods with parameters:
+* expose 2 methods with parameters:
   * linesInFiles(folderName)
   * linesInFilesAsync(folderName, callback) - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
       
@@ -235,7 +235,7 @@ Expose 2 methods with parameters:
         linesInFilesAsync('/dir/name', function(err, files){
         });  
       ```
-* you can use the folder to test ```./files/week1``` 
+* use this folder as input: ```./files/week1``` 
 
 ##Product list
 
@@ -248,4 +248,5 @@ The module should:
 * have two ***Asyncronous*** methods:
   * ```productNames``` - returns a list of products
   * ```productSold``` - returns a list how many of each product is sold
-
+* use the ```./files/products.csv``` file to test
+ 
