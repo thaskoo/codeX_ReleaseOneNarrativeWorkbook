@@ -16,15 +16,15 @@ Once the install is done, type ```mocha``` in the same window - you should get a
 
 As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the Tasks more and more of the tests should start to pass.
 
-##Task 1
+##Hello terminal
 
-Create file called hello and write 'hello world!' to the console.
+Create file called ```hello.js``` in the node-terminal folder, in the script write 'hello world!' to the console.
 
 You can run the program from the command line using: ```nodejs hello.js```
 
 Run ```mocha``` from the command line. At least one test should pass.
 
-##Task 2
+##Filter some numbers
 
 Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console.
 
@@ -32,7 +32,7 @@ Run the program from the command line using: ```nodejs filter-numbers.js```
 
 Run ```mocha``` from the command line. At least two tests should pass.
 
-##Task 3
+##Print users
 
 Follow the instructions inside the users.js file
 
@@ -194,7 +194,7 @@ console.log(uppercaseWords);
 //["ONE", "DAY", "I", "WENT", "TO", "THE", "AQUARIUM"]
 ```
 
-##Task 4: Create a new module
+##Let's get modular
 
 Now let's use your newly found knowledge about modules. 
 
@@ -237,7 +237,7 @@ Expose 2 methods with parameters:
       ```
 * you can use the folder to test ```./files/week1``` 
 
-## Task 5
+##Product list
 
 Create a module that can read a product file and do two things: 
 * return a list of all the products in the file
