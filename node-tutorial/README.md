@@ -1,20 +1,20 @@
 #Node tutorial
 
-A quick introduction no Node JS.
+A quick introduction to Node JS.
 
-This will introduce you to using Javascript on the command line using.
+This will introduce you to using Javascript on the command line using Node JS.
  
 ##Testing what've done
 
-To test that you have done the right thing you need to have th ```mocha``` module installed.
+To test that you have done the right thing you need to have the ```mocha``` module installed.
 
-Install it typing this command into a a terminal window:
+Install it typing this command into a terminal window:
 
 ```sudo npm install -g mocha```
 
 Once the install is done, type ```mocha``` in the same window - you should get a bunch of failing tests.
 
-As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successfull. As you work your way through the Tasks more and more of the tests should start to pass.
+As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the Tasks more and more of the tests should start to pass.
 
 ##Task 1
 
@@ -26,7 +26,7 @@ Run ```mocha``` from the command line. At least one test should pass.
 
 ##Task 2
 
-Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console
+Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console.
 
 Run the program from the command line using: ```nodejs filter-numbers.js```
 
@@ -42,9 +42,9 @@ Run ```mocha``` from the command line. At least three tests should pass.
 
 ## Modules
 
-So far all the NodeJS programs your wrote was little islands, the only way they communicated to the end user was through the console. And the only way we were able to test them was using some trickery tracking what has been logged to the console.
+So far all the NodeJS programs your wrote were little islands: the only way they communicated with the end user was through the console. And the only way we were able to test them was using some trickery tracking which was logged to the console.
 
-Sharing Javascript files in the browser was easy using the ```script```` tag, but it is also tricky as these script references needs to be in the right order etc.
+Sharing Javascript files in the browser was easy using the ```script``` tag, but it is also tricky as these script references needs to be in the right order etc.
 
 NodeJS has a more sophisticated module system that is based on CommonJS. Not only can you create your own modules, but NodeJS also has it own built in modules that you can use to access files on disk for example.
 
@@ -81,11 +81,11 @@ high
 
 printed to the screen.
 
-##Usefull functions built into Javascript
+##Useful functions built into Javascript
 
 ### String
 
-As string object in Javascript has a lot of methods that allows you can use.
+A string object in Javascript has a lot of methods that allows you can use.
 
 To see what those are:
 
@@ -93,7 +93,7 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 
 One I would like to highlight is:
 
-```split``` - the split function takes a string and split it into different parts using a delimeter
+```split``` - the split function. This takes a string and splits it into different parts using a delimeter.
 
 Say for example you have a sentence and I would like to find all the words in the sentence.
 
@@ -109,12 +109,12 @@ console.log(words);
 
 ```
 
-One usefull trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line.
+One useful trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line.
 
-A useful recipe to remember:
+#### A useful recipe to remember:
 * read a file
-* split the file on using new lines to get each line
-* split each line using a delimeter (either a space ' ' or ',' for example) to get each field
+* split the file using new lines to get each line
+* split each line using a delimeter (either a space ' ' or comma ',' for example) to get each field
 
 ### Arrays
 
@@ -122,7 +122,8 @@ So what methods does an Array have?
 
 Ok, go and google this quickly : ```array javascript functions mdn```
 
-> **Top tip** whenever search/google for something about javascript specific syntax by adding 'mdn' to your search criteria you are bound to get some Javascript reference from The Mozilla Developer Network - which is an authority on Javascript syntax.
+> **Top tip** Whenever you search for specific javascript syntax, add the term 'mdn' to your search criteria. 
+This way you are bound to get a Javascript reference from The Mozilla Developer Network - which is an authority on Javascript syntax.
 
 Using the search above your first hit should be:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -132,6 +133,7 @@ We will focus on three functions of the Array object:
 * filter
 * map
 
+#### forEach
 ```forEach``` is any easy way to loop through all the entries in a list 
 
 To display all the words in a list you can do this:
@@ -156,6 +158,7 @@ words.forEach(function(word){
 */
 ```
 
+#### filter
 ```filter``` is a handy way to find data in an Array
 
 To find all the words in a sentence shorter or equal to 3 do this:
@@ -173,7 +176,7 @@ console.log(shortWords);
 //["One", "day", "I", "to", "the"]
 
 ```
-
+#### map
 ```map``` is an easy way to convert/change all the values in an Array:
 
 To convert all the entries in a list to uppercase:
@@ -191,13 +194,13 @@ console.log(uppercaseWords);
 //["ONE", "DAY", "I", "WENT", "TO", "THE", "AQUARIUM"]
 ```
 
-##Task 4
+##Task 4: Create a new module
 
 Now let's use your newly found knowledge about modules. 
 
 You will now create a new module and also use some of NodeJS's built in modules. The module should be able to return a list of all the rows in all the files in a specified folder. Your module should be able to do that Syncronously and Asyncronously.
 
-So you module should:
+So your module should:
 * find all the files in a folder
 * then read each file in the folder
 * find each row in each file
@@ -206,12 +209,15 @@ So you module should:
  
 > For example: 
 > * if there are 3 files in the folder 
-> * and each file have 3 rows 
+> * and each file has 3 rows 
+> 
 > your modules should return a list containing 9 rows.
 
-The built in module you should use is called 'fs', you can read more about it here: http://nodejs.org/api/fs.html
+The built in module you should use is called 'fs'
 
-**You would use one of these 2 function calls on the module**
+You can read more about it here: http://nodejs.org/api/fs.html
+
+**You would use one of these 2 function calls on the module:**
 
 To get files in the folder:
 * http://nodejs.org/api/fs.html#fs_fs_readdirsync_path
@@ -221,7 +227,7 @@ To get the data in the files:
 
 The module should be in a file called:
 * read-folder.js
-* expose 2 methods with parameters:
+Expose 2 methods with parameters:
   * linesInFiles(folderName)
   * linesInFilesAsync(folderName, callback) - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
       
