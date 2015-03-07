@@ -6,19 +6,25 @@ This will introduce you to using Javascript on the command line using Node JS.
  
 ##Testing what've done
 
-To test that you have done the right thing you need to have the ```mocha``` module installed.
+There are some pre written tests that will track your progress through this tutorial. To test that you have done the right you need to have the ```mocha``` module installed.
 
-Install it typing this command into a terminal window:
+Install it by typing this into a terminal window:
 
 ```sudo npm install -g mocha```
 
-Once the install is done, type ```mocha``` in the same window - you should get a bunch of failing tests.
+Once the install is done, type ```mocha``` in the same window - you should a message saying ```0 passing (1ms)```
 
-As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the Tasks more and more of the tests should start to pass.
+You now need to:
+* fork the [codeX_ReleaseOneNarrativeWorkbook](https://github.com/codex-academy/codeX_ReleaseOneNarrativeWorkbook)
+* open a new terminal window in the ```node-tutorial``` folder
+* run mocha in that folder - you should get a message about some failing tests
+* all the work below should be done in that folder.
+
+As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the tutorial more and more of the tests should pass.
 
 ##Hello terminal
 
-Create file called ```hello.js``` in the node-terminal folder, in the script write 'hello world!' to the console.
+Create a file called ```hello.js``` in the node-terminal folder, in the script write 'hello world!' to the console.
 
 You can run the program from the command line using: ```nodejs hello.js```
 
@@ -26,7 +32,7 @@ Run ```mocha``` from the command line. At least one test should pass.
 
 ##Filter some numbers
 
-Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console.
+Change the program that is in the filter-numbers.js file to only print the even numbers in the list to the console. You are not allowed to change the console.log statement.
 
 Run the program from the command line using: ```nodejs filter-numbers.js```
 
@@ -42,11 +48,11 @@ Run ```mocha``` from the command line. At least three tests should pass.
 
 ## Modules
 
-So far all the NodeJS programs your wrote were little islands: the only way they communicated with the end user was through the console. And the only way we were able to test them was using some trickery tracking which was logged to the console.
+So far all the NodeJS programs your wrote were little islands, the only way they communicated with the end user was through the console. And the only way we were able to test them was using some trickery to track what was logged to the console.
 
-Sharing Javascript files in the browser was easy using the ```script``` tag, but it is also tricky as these script references needs to be in the right order etc.
+For sharing Javascript files in the browser one use the ```script``` tag, but it is also tricky as these script references needs to be loaded in the right order etc.
 
-NodeJS has a more sophisticated module system that is based on CommonJS. Not only can you create your own modules, but NodeJS also has it own built in modules that you can use to access files on disk for example.
+NodeJS has a more sophisticated module system, that is based on CommonJS. Not only can you create your own modules, but NodeJS also has it own built in modules that you can use to access files on disk for example.
 
 To create a module that exports two methods called ```high``` and ```low``` you need do the following:
 
@@ -65,6 +71,7 @@ If you save the above code in a file called ```my_module.js```, then create new 
 
 ```javascript
 
+// note the ./ in front of the module name
 var low_or_high = require('./my_module');
 
 low_or_high.low();
@@ -82,6 +89,8 @@ high
 printed to the screen.
 
 ##Useful functions built into Javascript
+
+Objects in Javascript has various usefull methods that makes it easy to do various tasks. Below we will focus on a few useful tasks of the String and Array object. 
 
 ### String
 
