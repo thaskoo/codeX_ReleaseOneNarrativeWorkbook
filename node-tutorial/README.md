@@ -303,6 +303,6 @@ The module should:
 * be called ```products.js```
 * have two ***Asyncronous*** methods:
   * ```productNames``` - returns a list of products
-  * ```productSold``` - returns a list how many of each product is sold
+  * ```productsSold``` - returns a map of how many of each product is sold - mapping productName to quantity sold.
 * use the ```./files/products.csv``` file to test
  
