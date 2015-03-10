@@ -17,15 +17,27 @@ Node, on the other hand, is non-blocking, which means it can cook many cheesebur
 
 https://github.com/maxogden/art-of-node#callbacks
 
-
-Note is that Node JS is asyncronous by nature and the concept using callbacks is used heavily. It does take some time to get use to, but you will get there.
+Note is that Node JS is asyncronous by nature and the concept using callbacks are used heavily. It does take some time to get use to, but you will get there.
 
 Soon you will be introduced to callbacks like this:
 
-```
-function(err, value){
+```javascript
 
+var callback = function(err, value){
+	console.log("here you go after 2 seconds!");	
 }
+
+var doSomething = function(param, cb){
+	//lets simulate a task that takes 2 seconds to complete
+	setTimeout(function(){
+		cb();
+		console.log('now we are done');
+	}, 2000);
+}
+
+doSomething("some param", callback);
+console.log("done!");
+
 ```
 
 ##Node API
