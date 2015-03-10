@@ -12,13 +12,13 @@ Install it by typing this into a terminal window:
 
 ```sudo npm install -g mocha```
 
-Once the install is done, type ```mocha``` in the same window - you should a message saying ```0 passing (1ms)```
-
 You now need to:
-* fork the [codeX_ReleaseOneNarrativeWorkbook](https://github.com/codex-academy/codeX_ReleaseOneNarrativeWorkbook)
-* open a new terminal window in the ```node-tutorial``` folder
-* run mocha in that folder - you should get a message about some failing tests
-* all the work below should be done in that folder.
+* fork the [codeX_ReleaseOneNarrativeWorkbook](https://github.com/codex-academy/codeX_ReleaseOneNarrativeWorkbook) repository
+* Now clone a copy into your local project folder
+* open a new terminal window and change into the ```node-tutorial``` folder
+* run mocha in that folder - type ```mocha``` and press enter - you should a message saying ```0 passing (1ms)```
+* you should get messages about some failing tests
+* all the work below should be done in the ```node-tutorial``` folder.
 
 As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the tutorial more and more of the tests should pass.
 
@@ -59,23 +59,23 @@ To create a module that exports two methods called ```high``` and ```low``` you 
 ```javascript
 
 exports.high = function(){
-  console.log('high');
+  return "high";
 };
 
 exports.low = function(){
-  console.log('low');
+ return "low";
 }
 ```
 
-If you save the above code in a file called ```my_module.js```, then create new file let's say called ```test_modules.js``` you can use it was a module like this:
+Save the above code in a file called ```my_module.js```, then create new file let's say called ```test_modules.js``` you can use it was a module like this:
 
 ```javascript
 
 // note the ./ in front of the module name
 var low_or_high = require('./my_module');
 
-low_or_high.low();
-low_or_high.high();
+console.log(low_or_high.low());
+console.log(low_or_high.high());
 
 ```
 
@@ -88,9 +88,56 @@ high
 
 printed to the screen.
 
+Run ```mocha``` from the command line. The 'Let's use modules' test should pass.
+
+Why use modules you ask? One use modules to break your program down into more manageable parts, encouraging decoupling of code. Or to break it into logical components that each focus on a specific task. It also makes it easier for one to test each component. Testable code is decoupled code that is properly componentized by using modules.
+
+## More modules:
+
+One can also create modules that exports a whole new function constructor function of its own. And it can take in parameters at construction time.
+
+This looks like this:
+
+```javascript
+module.exports = function(descMap){
+
+  this.high = function(){
+    return descMap['high'];
+  }
+  
+  this.low = function(){
+   return descMap['low'];
+  }
+}
+```
+
+Save this code in a file called ```another_module.js```
+
+Create another file called ```another_module_test.js``` and use this module in there:
+
+```javascript
+
+var AnotherModule = require('./another_module');
+
+var anotherModule = new AnotherModule({low : "very low", high : "very high"});
+
+console.log(anotherModule.high());
+console.log(anotherModule.low());
+
+```
+
+Running this should print:
+
+```very low
+very high```
+
+To the screen
+
+If you run ```mocha``` the 'Another constructor module' test should pass.
+
 ##Useful functions built into Javascript
 
-Objects in Javascript has various usefull methods that makes it easy to do various tasks. Below we will focus on a few useful tasks of the String and Array object. 
+Objects in Javascript has various usefull methods that makes it easy to do various tasks. We will look at a few useful methods of the String and Array object just to show you what is possible. Be sure to look into what other methods are supported by the String and Array objects as well as the other built in objects in Javascript - this will prevent you from doing unnecessary work.
 
 ### String
 
@@ -118,12 +165,12 @@ console.log(words);
 
 ```
 
-One useful trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line.
+One useful trick is that you can split on newline characters by using the ```\n``` character. You can use this approach to split a file that contains newline characters into a list of strings. One string for each line in the file. Now you can go even further by splitting each line into seperate fields. After this you should be able access all the data in the text file quite easily.
 
 #### A useful recipe to remember:
-* read a file
-* split the file using new lines to get each line
-* split each line using a delimeter (either a space ' ' or comma ',' for example) to get each field
+* read a text file from disk
+* split the file into an Array of string using the new lines character (```\n```) to get each line in the file
+* split each line using a delimeter (either a space ' ' or comma ',' for example) to get all the fields in the line.
 
 ### Arrays
 
@@ -131,8 +178,8 @@ So what methods does an Array have?
 
 Ok, go and google this quickly : ```array javascript functions mdn```
 
-> **Top tip** Whenever you search for specific javascript syntax, add the term 'mdn' to your search criteria. 
-This way you are bound to get a Javascript reference from The Mozilla Developer Network - which is an authority on Javascript syntax.
+> **Top tip** Whenever you search for javascript specific syntax, add the term 'mdn' to your search criteria. 
+This way you are bound to get a Javascript reference from 'The Mozilla Developer Network' (mdn) - which is an authority on Javascript syntax.
 
 Using the search above your first hit should be:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array
@@ -216,23 +263,22 @@ So your module should:
 * then append each row to a list 
 * return the list that contains all the lines off all the files.
  
-> For example: 
-> * if there are 3 files in the folder 
-> * and each file has 3 rows 
-> 
-> your modules should return a list containing 9 rows.
+For example: 
+* if there are 3 files in the folder 
+* and each file has 3 rows 
+* your modules should return a list containing 9 rows.
 
-The built in module you should use is called 'fs'
+The built in module you should use is called 'fs' - 'fs' stands for File System. The ```fs``` built in module is handling all things related to accessing files from Node JS.
 
-You can read more about it here: http://nodejs.org/api/fs.html
-
-**You would use one of these 2 function calls on the module:**
+**You should use these 2 function calls from the fs module in your module:**
 
 To get files in the folder:
 * http://nodejs.org/api/fs.html#fs_fs_readdirsync_path
 
 To get the data in the files:
 * http://nodejs.org/api/fs.html#fs_fs_readfilesync_filename_options
+
+You can read more about it fs module as a whole here: http://nodejs.org/api/fs.html
 
 The module should be in a file called:
 * read-folder.js
@@ -249,6 +295,7 @@ The module should be in a file called:
 ##Product list
 
 Create a module that can read a product file and do two things: 
+
 * return a list of all the products in the file
 * return the total number of items sold for each product
 
