@@ -128,8 +128,10 @@ console.log(anotherModule.low());
 
 Running this should print:
 
-```very low
-very high```
+```
+very low
+very high
+```
 
 To the screen
 
