@@ -20,6 +20,10 @@ You now need to:
 * you should get messages about some failing tests
 * all the work below should be done in the ```node-tutorial``` folder.
 
+You can use the command below to see which tests are passing and which not:
+
+```mocha --reporter spec``` 
+
 As you work your way through the tasks run the ```mocha``` command after each test to be sure that your implementation is successful. As you work your way through the tutorial more and more of the tests should pass.
 
 ##Hello terminal
@@ -45,6 +49,8 @@ Follow the instructions inside the users.js file
 Run the program from the command line using: ```nodejs users.js```
 
 Run ```mocha``` from the command line. At least three tests should pass.
+
+You can use ```mocha --reporter spec``` to see details on which tests are passing and which not - you might need to scroll up.
 
 ## Modules
 
@@ -308,3 +314,4 @@ The module should:
   * ```productsSold``` - returns a map of how many of each product is sold - mapping productName to quantity sold.
 * use the ```./files/products.csv``` file to test
  
+**Once all the tests are passing you are done!**
