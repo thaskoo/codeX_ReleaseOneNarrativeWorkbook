@@ -133,7 +133,7 @@ very high```
 
 To the screen
 
-If you run ```mocha``` the 'Another constructor module' test should pass.
+If you run ```mocha``` the 'Constructor module' test should pass.
 
 ##Useful functions built into Javascript
 
