@@ -21,6 +21,7 @@ Having a good handle on JQuery is required going forward
 
 ##Processing the data:
 * Basic data modelling
+* SQL
 * Control Breaks - reports with subheaders
       http://en.wikipedia.org/wiki/Control_break	
 * Sorting data
