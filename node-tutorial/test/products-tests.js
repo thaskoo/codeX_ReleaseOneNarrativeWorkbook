@@ -2,10 +2,10 @@ var assert = require("assert");
 
 describe("Find data in file", function(){
 
-    var Products = require("../products");
 
     it('should return a unique list of product names in the file asynchronously', function(done){
 
+        var Products = require("../products");
         var products = new Products('./files/products.csv');
         products.productNames(function(err, products){
             assert.deepEqual(["Milk", "Bread", "Coffee"], products);
@@ -16,6 +16,7 @@ describe("Find data in file", function(){
     });
 
     it('should return the total number of items sold for each product', function(done){
+        var Products = require("../products");
 
         var products = new Products('./files/products.csv');
         products.productsSold(function(err, products){

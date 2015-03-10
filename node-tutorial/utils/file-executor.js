@@ -20,4 +20,4 @@ exports.execute = function(fileName, cb){
 
         }
     });
-}
+};

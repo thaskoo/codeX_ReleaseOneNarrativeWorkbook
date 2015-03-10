@@ -36,7 +36,6 @@ describe('Filter data!', function(){
     });
 });
 
-
 describe('Users', function(){
     it('should be printed to the screen', function(done){
 
