@@ -45,5 +45,5 @@ If you feel you need some more practice with Node JS before you move on try to d
 
 #Things to come
 
-Here are a high level [overview](HighlevelOverview.md) of things to come later in this release, the details will be provided
+Here is a high level [overview](OtherOverview.md) of things to come later in this release, the details will be provided
 
