@@ -18,9 +18,9 @@ You need to have node installed locally: [Node Setup](NodeSetup.md)
 
 ##Node school
 
-Here are some [background information](NodeBackground.md) of concepts about Node JS.
+Here are some [background information](NodeBackground.md) about some Node JS concepts.
 
-Now upgrade your knowledge about NodeJS by doing this tutorial: [Node Tutorial](node-tutorial/README.md) - you can track your progress through the tutorial by checking how many of the unit tests are passing.
+Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progress through by checking how many of the unit tests are passing.
 
 #Try this
 
