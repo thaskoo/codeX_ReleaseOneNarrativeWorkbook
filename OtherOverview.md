@@ -41,4 +41,6 @@ Having a good handle on JQuery is required going forward
 ## Templating: 
 * Use basic template
 * Use handlebars
+* http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/
+* http://www.korenlc.com/handlebars-js-tutorial-templating-with-handlebars/
 
