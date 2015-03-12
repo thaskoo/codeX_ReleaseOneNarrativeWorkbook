@@ -43,4 +43,5 @@ Having a good handle on JQuery is required going forward
 * Use handlebars
 * http://javascriptissexy.com/handlebars-js-tutorial-learn-everything-about-handlebars-js-javascript-templating/
 * http://www.korenlc.com/handlebars-js-tutorial-templating-with-handlebars/
+* http://learnwebtutorials.com/step-by-step-getting-started-tutorial-using-handlebars-js
 
