@@ -274,7 +274,7 @@ So your module should:
 For example: 
 * if there are 3 files in the folder 
 * and each file has 3 rows 
-* your modules should return a list containing 9 rows.
+* your modules should return a list containing the 9 rows in each file
 
 The built in module you should use is called 'fs' - 'fs' stands for File System. The ```fs``` built in module is handling all things related to accessing files from Node JS.
 
@@ -291,8 +291,8 @@ You can read more about it fs module as a whole here: http://nodejs.org/api/fs.h
 The module should be in a file called:
 * read-folder.js
 * expose 2 methods with parameters:
-  * linesInFiles(folderName)
-  * linesInFilesAsync(folderName, callback) - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
+  * ```linesInFiles``` which take folderName as a parameter and returns an Array
+  * ```linesInFilesAsync``` which take two parameters ```folderName and callback``` - the callback should return 2 parameters ```err``` & ```files``` calling it should look like this: 
       
       ```javascript
         linesInFilesAsync('/dir/name', function(err, files){
