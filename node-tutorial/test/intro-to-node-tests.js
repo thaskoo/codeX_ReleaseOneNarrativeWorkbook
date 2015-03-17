@@ -2,7 +2,7 @@ var assert = require("assert"),
     fileExecutor = require("../utils/file-executor");
 
 describe('Hello World!', function(){
-    it('should written to the console', function(done){
+    it('should write Hello World! to the console', function(done){
 
             fileExecutor.execute("hello.js", function (err, records){
                 if(err){
