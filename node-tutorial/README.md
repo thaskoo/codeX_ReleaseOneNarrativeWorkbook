@@ -286,6 +286,8 @@ To get files in the folder:
 To get the data in the files:
 * http://nodejs.org/api/fs.html#fs_fs_readfilesync_filename_options
 
+> You will need to pass in the encoding of ```utf8``` as an option parameter to ```readFileSync``` otherwise a buffer will be returned instead of the string value.
+
 You can read more about it fs module as a whole here: http://nodejs.org/api/fs.html
 
 The module should be in a file called:
