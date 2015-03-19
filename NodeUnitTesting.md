@@ -21,7 +21,29 @@ Create a folder called ```test``` in you project folder,  put all your tests in 
 A typical test looks like this:
 
 ```javascript
+QUnit.test("a basic test example", function () {
+    ok(true, "this test is fine");
+    var value = "hello";
+    equal("hello", value, "We expect value to be hello");
+}); 
+```
 
+For testing asyncronous callback you can write tests like this:
+
+```javascript
+QUnit.test("a basic test example", function () {
+    
+    var value = "hello";
+    //you need to add this
+    stop();
+    
+    setTimeout(function () {
+        // body...
+        equal("hello", value, "We expect value to be hello");
+        //and the line below need to be in your callback
+        start();        
+    }, 1000)
+});
 ```
 
 Note that all the functions and Objects you are testing should be in a module that you should import in your test using the ```require``` statement as above.
