@@ -37,12 +37,13 @@ QUnit.test("a basic test example", function () {
     //you need to add this
     stop();
     
-    setTimeout(function () {
+    anAsyncFunc(function(){
         // body...
         equal("hello", value, "We expect value to be hello");
         //and the line below need to be in your callback
-        start();        
-    }, 1000)
+        start();
+    });
+    
 });
 ```
 
