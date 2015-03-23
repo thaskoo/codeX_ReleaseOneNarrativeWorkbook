@@ -12,7 +12,14 @@
   * Express JS
     * Create routes
     * Combine data and template
-    * Renders dynamic content
+    * Renders dynamic content using a view engine
+
+**Usefull links:**
+
+Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
+
+http://expressjs.com/
 
 http://handlebarsjs.com/
+
 https://www.npmjs.com/package/express-handlebars
