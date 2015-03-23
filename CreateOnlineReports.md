@@ -38,9 +38,9 @@ You should have a basic Express JS setup inplace which can be used as a baseline
 
 ##Templating
 
+We will be using ```handlebars``` as the template engine, this will allow up to combine data with templates to render some usefull information.
 
-
-**Usefull links:**
+##Usefull links:
 
 Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
 
