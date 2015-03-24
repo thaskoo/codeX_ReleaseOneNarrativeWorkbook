@@ -36,7 +36,11 @@ http://expressjs.com/starter/static-files.html
 
 You should have a basic Express JS setup inplace which can be used as a baseline to get some basic reports up and running.
 
-Install ```nodemon``` to restart Express JS whenever a source file changed https://www.npmjs.com/package/nodemon
+## Easy server restarts
+
+One thing you will find is that you will need to restart Express JS everytine you changed a source file to get around that  install ```nodemon``` This will restart Express JS whenever a source file changes. 
+
+Its here : https://www.npmjs.com/package/nodemon - install it using npm
 
 Use it like this:
 
