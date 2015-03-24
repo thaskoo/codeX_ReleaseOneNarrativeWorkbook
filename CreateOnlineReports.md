@@ -50,22 +50,18 @@ A typical handlebars template look likes this
 </div>
 ```
 
-Handlebars comes with a set of built in helpers:
+Handlebars JS is built on top of Moustache templating engine and extends it. Moustache templating aims to be logicless templates, but that aim make it hard to use at times.
+
+> See some background information on the difference between Handlebars and Moustache : http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js
+
+Handlebars comes with a set of built in helpers that makes it easy for one to process data and convert it into a layout. It support things like if statements and loops.
 
 http://handlebarsjs.com/builtin_helpers.html
 
-Handlebars JS is built on top of Moustache templating engine and extends it. Moustache templating aims to be logicless templates, but that aim make it hard to use at times.
-
-See some background information on the difference between Handlebars and Moustache : http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js
-
-
-
 ##Usefull links:
 
-Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
-
-http://expressjs.com/
-
-http://handlebarsjs.com/
-
-https://www.npmjs.com/package/express-handlebars
+* Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
+* http://expressjs.com/
+* http://handlebarsjs.com/
+* https://www.npmjs.com/package/express-handlebars
+* https://mustache.github.io/
