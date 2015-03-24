@@ -2,7 +2,7 @@
 
 ## Background
 
-Now let's get let's display all this data you mined from the Nelissa's CSV File. For that you will need a web server, a template engine and data. You already have the data, as a web server we will be using Express JS and as a template engine Handlebars JS. You will install all these depencies using ```npm```
+Now let's display all the data you mined from the Nelissa's CSV File online. For that you will need a web server, a template engine and data. You already have the data, as a web server we will be using Express JS and as a template engine Handlebars JS. You will install all these depencies using ```npm```
 
 There are loads of alternatives to all the above in the Node JS eco-system, but knowing how the selected toolset work will give you a good baseline to explore alternatives from. 
 
