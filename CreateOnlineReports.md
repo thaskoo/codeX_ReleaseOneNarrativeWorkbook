@@ -38,7 +38,27 @@ You should have a basic Express JS setup inplace which can be used as a baseline
 
 ##Templating
 
-We will be using ```handlebars``` as the template engine, this will allow up to combine data with templates to render some usefull information.
+We will be using ```handlebars``` as the template engine, it combines data with templates to render information.
+
+A typical handlebars template look likes this
+
+```
+<div class="entry">
+  {{#if author}}
+    <h1>{{firstName}} {{lastName}}</h1>
+  {{/if}}
+</div>
+```
+
+Handlebars comes with a set of built in helpers:
+
+http://handlebarsjs.com/builtin_helpers.html
+
+Handlebars JS is built on top of Moustache templating engine and extends it. Moustache templating aims to be logicless templates, but that aim make it hard to use at times.
+
+See some background information on the difference between Handlebars and Moustache : http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js
+
+
 
 ##Usefull links:
 
