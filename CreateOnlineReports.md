@@ -1,5 +1,20 @@
 #Create online reports
 
+## Background
+
+Now let's get let's display all this data you mined from the Nelissa's CSV File. For that you will need a web server, a template engine and data. You already have the data, as a web server we will be using Express JS and as a template engine Handlebars JS. You will install all these depencies using ```npm```
+
+There are loads of alternatives to all the above in the Node JS eco-system, but knowing how the selected toolset work will give you a good baseline to explore alternatives from. 
+
+You should focus on:
+* Express JS - http://expressjs.com/
+* Handlebars JS - http://handlebarsjs.com/
+* Handlebars JS & Express integration layer - https://www.npmjs.com/package/express-handlebars
+
+## Concepts
+
+Some concepts you might bump into while doing this work.
+
 * JSON
   * Javascript Object Notation
   * Data Interchange - alternative to XML
