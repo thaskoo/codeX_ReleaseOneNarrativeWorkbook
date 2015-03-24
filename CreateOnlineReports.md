@@ -36,6 +36,13 @@ http://expressjs.com/starter/static-files.html
 
 You should have a basic Express JS setup inplace which can be used as a baseline to get some basic reports up and running.
 
+Install ```nodemon``` to restart Express JS whenever a source file changed https://www.npmjs.com/package/nodemon
+
+Use it like this:
+
+```nodemon server.js```
+
+
 ##Templating
 
 We will be using ```handlebars``` as the template engine, it combines data with templates to render information.
