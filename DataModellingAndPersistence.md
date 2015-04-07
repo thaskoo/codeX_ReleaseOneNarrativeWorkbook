@@ -29,34 +29,46 @@ Once the above questions are answered one have the basic information to create a
 
 ## SQL
 
-SQL stands for Structured Query Language, it's a data manipulation language that allows one to easily find and create data. SQL have 4 basic operations insert, delete, update and select. The ```select``` operation being the one to fin existing datat in the database the other operations are self explenatory. One use the fields in the tables to link various tables together.
-
-Let's start of by creating some categories:
-
-```
-insert into category (name) values ('sweets');
-insert into category (name) values ('food');
-```
-
-Let's find the categories:
-
-```
-select * from categories
-```
-
-Now let's insert some orders for the categories above:
-
-```
-insert into orders (date, product_name, quantity) values ('12-Feb-2015', 'Jelly Beans', 20, 1);
-insert into orders (date, product_name, quantity) values ('12-Feb-2015', 'Simba chips 30g', 35, 1);
-insert into orders (date, product_name, quantity) values ('12-Feb-2015', 'Bread', 27, 2);
-
-```
-
-
+SQL stands for Structured Query Language, it's a data manipulation language that allows one to easily find and create data. SQL have 4 basic operations insert, delete, update and select. The ```select``` operation being the one to fin existing datat in the database the other operations are self explenatory. One use the fields in the tables to link tables together.
 
 ## CRUD - create, read, update and delete
 
 One can use SQL to create some CRUD screens to manipulates data.
+
+## Learn it
+
+Now that you have a basic high level understanding of database bases and SQL work your way through this tutorial:
+
+http://sql.learncodethehardway.org/
+
+## MySQL
+
+For our project we would like to use MySQL which is an open source database that is used widely.
+
+Here is a basic tutorial to get going:
+
+https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial
+
+## Data model & CRUD for Nelisa
+
+Now use your database knowledge to:
+
+* create a data model for Nelisa's Spaza Shop
+* create a MySQL database this datamodel
+* import the CSV files you have from Nelisa into the database
+* change your web application to use the database
+
+Here is a basic CRUD overview:
+
+https://github.com/codex-academy/codeX_BasicCRUDExample
+
+
+
+
+
+
+
+
+
 
 
