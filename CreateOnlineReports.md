@@ -64,7 +64,7 @@ Create a file called ```server.js``` and copy the text below into it:
    
    });
    ```
-   Now try this:
+   **Now try this:**
    
    * Start the server by typing ```node server.js``` and pressing enter in the console.
    * In the web browser navigates to http://localhost:3000/
@@ -142,10 +142,21 @@ Handlebars comes with a set of built in helpers that makes it easy for one to pr
 
 http://handlebarsjs.com/builtin_helpers.html
 
+## Combining templates & data
+
+As we need to display the data in the web browser we use the templates, which is how we would like the data to be displayed, with what needs to be displayed, which is the data.
+
+It goes like this:
+
+```template + data = web page```
+
+So we some how need to combine templates and data in Express JS. Luckily there is already a Node node module that is combining Express JS and Handlebars
+
+Take a look here: https://www.npmjs.com/package/express-handlebars
+
 ##Usefull links:
 
 * Loading JSON files using require - https://nodejs.org/api/modules.html#modules_file_modules
 * http://expressjs.com/
 * http://handlebarsjs.com/
-* https://www.npmjs.com/package/express-handlebars
 * https://mustache.github.io/
