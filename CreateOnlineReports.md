@@ -170,8 +170,12 @@ You should now know enough to display onlime reports for Nelisa.
 
 ## Layout & CSS frameworks
 
+How do you make your Spaza Shop reports looking nice on laptops, tablets and phones? Responsive design is the answer. If a web site is responsive it will respond correctly to the device that it is displayed on. Responsive web design is a whole field in it's right. But luckily there are some frameworks you can built on. These frameworks are:
+
 http://getbootstrap.com/
+
 http://foundation.zurb.com/
+
 http://getskeleton.com/
 
 Comparing CSS frameworks: http://responsive.vermilion.com/compare.php
