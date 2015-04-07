@@ -24,10 +24,10 @@ Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progre
 
 ##How to:
 
-[Create online reports](./CreateOnlineReports.md)
-[Model data](./DataModellingAndPersistence.md)
-[Update data](./)
-[Create Interactive website](./)
-[Create a secure web site](./)
-[Create an API](./)
+* [Create online reports](./CreateOnlineReports.md)
+* [Model data](./DataModellingAndPersistence.md)
+* [Update data](./)
+* [Create Interactive website](./)
+* [Create a secure web site](./)
+* [Create an API](./)
 
