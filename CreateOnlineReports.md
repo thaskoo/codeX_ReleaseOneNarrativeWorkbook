@@ -33,19 +33,50 @@ Some concepts you might bump into while doing this work.
 
 Here are some basic instructions on how to get going with Express JS.
 
-I takes you through the steps of:
-* installing
-* getting a basic instance to run
-* setting up basic routes
-* rendering static files
+### Install Express JS : http://expressjs.com/starter/installing.html
+  * create a new folder in your projects folder called ```spaza-app```
+  * change into this folder using ```cd spaza-app```
+  * createa a ```package.json``` file using ```npm init```
+  * install Express JS and store it in the dependencies list in the package.json ```npm install --save express```
+  
+### Getting a basic Express instance to run
+  
+Create a file called ```server.js``` and copy the text below into it: 
 
-Once done with these steps:
+   ```javascript
+   var express = require('express');
+   var app = express();
+   
+   // create a route
+   app.get('/', function (req, res) {
+     res.send('Hello World!');
+   });
+   
+   //start the server
+   var server = app.listen(3000, function () {
+   
+     var host = server.address().address;
+     var port = server.address().port;
+   
+     console.log('Example app listening at http://%s:%s', host, port);
+   
+   });
+   ```
+   Now try this:
+   
+   * Start the server by typing ```node server.js``` and pressing enter in the console.
+   * In the web browser navigates to http://localhost:3000/
+   * Stop the server in the console by pressing Ctrl-C in the console a few times
+   * Now navigates to http://localhost:3000/ again. What happens
+   * Start the server and try the above again.
+   * Try to navigate to ```http://localhost:3000/hello``` - what happens? How can we fix that?
+   * Try this:
+    * Stop the web server
+    * add a new route for '/hello' that renders 'Hello codeX!' to the screen
+    * Start the server
+    * Now try to navigate to ```http://localhost:3000/hello``` What happened?
 
-http://expressjs.com/starter/installing.html
-
-http://expressjs.com/starter/hello-world.html
-
-http://expressjs.com/starter/basic-routing.html
+## Rendering static files
 
 http://expressjs.com/starter/static-files.html
 
