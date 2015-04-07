@@ -58,6 +58,10 @@ Now use your database knowledge to:
 * import the CSV files you have from Nelisa into the database
 * change your web application to use the database
 
+> Aggregate functions will be very usefull to you:
+>  * http://www.sqlclauses.com/sql+aggregate+functions/
+> 
+
 Here is a basic CRUD overview:
 
 https://github.com/codex-academy/codeX_BasicCRUDExample
