@@ -41,6 +41,16 @@ Now that you have a basic high level understanding of database bases and SQL wor
 
 http://sql.learncodethehardway.org/
 
+## Aggregating data
+
+Once your data is in a database you can use it to calculate aggregates like averages, max or min values.
+
+Some more details:
+
+* http://www.sqlclauses.com/sql+aggregate+functions/
+* http://www.mysqltutorial.org/mysql-aggregate-functions.aspx
+* http://www.techotopia.com/index.php/MySQL_Data_Aggregation_Functions
+
 ## MySQL
 
 For our project we would like to use MySQL which is an open source database that is used widely.
@@ -58,21 +68,8 @@ Now use your database knowledge to:
 * import the CSV files you have from Nelisa into the database
 * change your web application to use the database
 
-> Aggregate functions will be very usefull to you:
->  * http://www.sqlclauses.com/sql+aggregate+functions/
-> 
+> Aggregate functions will be very usefull.
 
 Here is a basic CRUD overview:
 
 https://github.com/codex-academy/codeX_BasicCRUDExample
-
-
-
-
-
-
-
-
-
-
-
