@@ -33,12 +33,14 @@ Some concepts you might bump into while doing this work.
 
 Here are some basic instructions on how to get going with Express JS.
 
-### Install Express JS : http://expressjs.com/starter/installing.html
+### Install Express JS
   * create a new folder in your projects folder called ```spaza-app```
   * change into this folder using ```cd spaza-app```
   * createa a ```package.json``` file using ```npm init```
   * install Express JS and store it in the dependencies list in the package.json ```npm install --save express```
   
+ More details here: http://expressjs.com/starter/installing.html
+
 ### Getting a basic Express instance to run
   
 Create a file called ```server.js``` and copy the text below into it: 
@@ -118,7 +120,21 @@ A typical handlebars template look likes this
 </div>
 ```
 
+Combining the above with data like this:
+
+```javascript
+var user = {
+ author : true,
+ firstName : "Jo",
+ lastName : "Blogss"
+};
+```
+
+results in a html enriched with some data.
+
 Handlebars JS is built on top of Moustache templating engine and extends it. Moustache templating aims to be logicless templates, but that aim make it hard to use at times.
+
+See some more information on how the templates works: https://mustache.github.io/mustache.5.html
 
 > See some background information on the difference between Handlebars and Moustache : http://stackoverflow.com/questions/10555820/what-are-the-differences-between-mustache-js-and-handlebars-js
 
