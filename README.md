@@ -22,9 +22,12 @@ Here are some [background information](NodeBackground.md) about some Node JS con
 
 Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progress through by checking how many of the unit tests are passing.
 
+##How to:
 
-
-#Things to come
-
-Here is a high level [overview](OtherOverview.md) of things to come later in this release, the details will be provided
+[Create online reports](./CreateOnlineReports.md)
+[Model data](./DataModellingAndPersistence.md)
+[Update data](./)
+[Create Interactive website](./)
+[Create a secure web site](./)
+[Create an API](./)
 
