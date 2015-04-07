@@ -152,7 +152,14 @@ It goes like this:
 
 So we some how need to combine templates and data in Express JS. Luckily there is already a Node node module that is combining Express JS and Handlebars
 
-Take a look here: https://www.npmjs.com/package/express-handlebars
+Look at this : https://www.npmjs.com/package/express-handlebars
+
+Integrate handlebars templating into your spaza-app Express application.
+
+## Display data from Nelisa's CSV
+
+You should now know enough to display onlime reports for Nelisa.
+
 
 ##Usefull links:
 
@@ -160,3 +167,15 @@ Take a look here: https://www.npmjs.com/package/express-handlebars
 * http://expressjs.com/
 * http://handlebarsjs.com/
 * https://mustache.github.io/
+
+## Layout & CSS frameworks
+
+http://getbootstrap.com/
+http://foundation.zurb.com/
+http://getskeleton.com/
+
+Comparing CSS frameworks: http://responsive.vermilion.com/compare.php
+
+
+
+
