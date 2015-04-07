@@ -18,7 +18,7 @@ looks at what different types of data needs to be stored and how they relate to 
 
 Look at this scenario:
 
->> As as Taxi Owner I would like to see who is driving my taxi's and on which routes.
+> As as Taxi Owner I would like to see who is driving my taxi's and on which routes.
 
 Answer these questions:
   * For what entities do we need to store data?
