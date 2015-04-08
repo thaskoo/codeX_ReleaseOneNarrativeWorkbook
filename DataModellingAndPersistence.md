@@ -1,6 +1,6 @@
 # Data Modelling and Persistence
 
-To write applications one need a way of storing and manipulating data, that is what databases are for. They make 
+Applications needs a way of storing and manipulating data, that is what databases are for. Databases makes 
 it easy to store, structure, retrieve and manage data.
 
 ## Database basics
@@ -8,13 +8,21 @@ it easy to store, structure, retrieve and manage data.
 Databases put data that belongs together in tables, each table have multiple entries with is called rows and 
 each row have multiple fields.
 
-One can link tables to each other using fields, one can create a field in one table and reference that field 
-from another table. In effect one is creating relationships between tables, that's why it is called relational databases then.
-
+One can link tables using fields, by creating a field in one table and referencing that field 
+from another table. These ields are used to create relationships between tables, that's why it is called relational databases.
 
 ## Data Modelling
 
-The process of creating a set of data entities that describes a problem domain is called Data Modelling. When creating a data model one looks at what different types of entities needs to be stored and how they relate to each other. Entities are created as tables that contains rows, each row contains some fields which is the specific data that is stored and fields are used as keys (foreign keys) to map relationships between entities.
+The process of creating a set of data entities that describes a problem domain is called Data Modelling. When creating a data model one looks at what different entities needs to be stored and how they relate to each other. Entities are created as tables that contains rows, each row contains some fields which is the specific data that is stored and fields are used as keys (foreign keys) to map relationships between entities.
+
+### Database components
+
+* Tables
+* Rows
+* Fields
+* Keys
+ * Primary keys - a field that makes a row unique
+ * Foreign keys - a field that reference a key in another table
 
 Look at this scenario:
 
@@ -25,11 +33,13 @@ Answer these questions:
   * What data do we need for each entity?
   * How do the entities relate to each other?
 
-Once the above questions are answered one have the basic information to create a data model. Once one have a data model one can create a database. 
+Once the above questions are answered one have the basic information for creating a data model. Once one have a data model one can create a database. 
 
 ## SQL
 
-SQL stands for Structured Query Language, it's a data manipulation language that allows one to easily find and create data. SQL have 4 basic operations insert, delete, update and select. The ```select``` operation being the one to fin existing datat in the database the other operations are self explenatory. One use the fields in the tables to link tables together.
+Once one have a database one needs a way of manipulating the data in the database. One needs to be able to insert, query, update and delete the data, this is where SQL comes in.
+
+SQL stands for Structured Query Language, it's a data manipulation language that allows one to easily find (query) and create data. SQL have 4 basic operations insert, delete, update and select. The ```select``` operation being the one to find existing datat in the database the other operations are self explenatory. One use the fields in the tables to link tables together.
 
 ## CRUD - create, read, update and delete
 
