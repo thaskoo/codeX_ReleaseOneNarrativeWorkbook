@@ -11,18 +11,18 @@ each row have multiple fields.
 One can link tables using fields, by creating a field in one table and referencing that field 
 from another table. These ields are used to create relationships between tables, that's why it is called relational databases.
 
-## Data Modelling
-
-The process of creating a set of data entities that describes a problem domain is called Data Modelling. When creating a data model one looks at what different entities needs to be stored and how they relate to each other. Entities are created as tables that contains rows, each row contains some fields which is the specific data that is stored and fields are used as keys (foreign keys) to map relationships between entities.
-
 ### Database components
 
 * Tables
 * Rows
 * Fields
 * Keys
- * Primary keys - a field that makes a row unique
- * Foreign keys - a field that reference a key in another table
+ * Primary key - a field that makes a row unique
+ * Foreign key - a field that reference a key in another table
+
+## Data Modelling
+
+The process of creating a set of data entities that describes a problem domain is called Data Modelling. When creating a data model one looks at what different entities needs to be stored and how they relate to each other. Entities are created as tables that contains rows, each row contains some fields which is the specific data that is stored and fields are used as keys (foreign keys) to map relationships between entities.
 
 Look at this scenario:
 
