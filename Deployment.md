@@ -1,7 +1,6 @@
 #Deployment
 
-The process of putting your application on the the internet so that it can be used by users are called deployment. 
-There are various options for deploying your application.
+Deployment is the process of putting your application on the the internet.  There are various options for deploying your application.
 
 ##Some deployment options are:
 * shared hosting
@@ -9,7 +8,7 @@ There are various options for deploying your application.
 * a virtual private server (VPS) provided by a cloud host
 * using a Platform as a Service (PaaS)
 
-We will be focussing on the last two options VPS and PaaS.
+We will be focussing on the last two options VPS and PaaS. Later you will use a PaaS called Heroku to deploy your application.
 
 ##VPS providers
 
@@ -34,3 +33,12 @@ This allows for alot of flexibility and freedom, but it does take a certain leve
 * Google Compute engine
   * https://cloud.google.com/compute/
   
+##PaaS
+
+Platform as a Service is some infrastructure that are provided in the Cloud (intetnet) that allows one to easily deploys ones application on the internet. Typically using some command line arguments that one can easily integrate into ones application development workflow. Tight integration with github is not uncommon with git commits and pushes used to deploy ones application. As you can see this brings the deployment process close to ones application development activities.
+
+### Deploying to Heroku
+
+The PaaS service we will be using is called Heroku (http://heroku.com/) and it can be used to deploy a wide range of application frameworks of which Node JS is one.
+
+To deploy your Spaza application register at Heroku and follow these steps: https://devcenter.heroku.com/articles/deploying-nodejs
