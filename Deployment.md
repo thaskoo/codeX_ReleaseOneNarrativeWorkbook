@@ -8,11 +8,23 @@ Deployment is the process of putting your application on the the internet.  Ther
 * a virtual private server (VPS) provided by a cloud host
 * using a Platform as a Service (PaaS)
 
-We will be focussing on the last two options VPS and PaaS. Later you will use a PaaS called Heroku to deploy your application.
+We will be focussing on the last two options VPS and PaaS.
+
+As a a PaaS needs less time to setup you will using one called Heroku to deploy your application.
+
+##PaaS
+
+A Platform as a Service (PaaS) is server infrastructure that is provided in the Cloud (in the internet) that allows one to easily deploy applications online. Typically using some command line utilities that one can easily integrate in ones application development workflow. Tight integration with github is not uncommon with git commits and pushes used to deploy ones application. As you can see this brings the deployment process close to existing application development activities.
+
+### Deploying to Heroku
+
+The PaaS service we will be using is called Heroku (http://heroku.com/) and it can be used to deploy a wide range of application frameworks of which Node JS is one.
+
+To deploy your Spaza application register at Heroku and follow these steps: https://devcenter.heroku.com/articles/deploying-nodejs
 
 ##VPS providers
 
-Virtual Private Servers providei you with dedicated servers in the cloud that one needs to configure oneself. 
+Virtual Private Servers provides you with dedicated servers in the cloud that one needs to configure oneself. 
 This allows for alot of flexibility and freedom, but it does take a certain level of skills as you need to configure everything yourself. This include the firewall, database and web server setup. This sounds quite daunting, but there are a lots of tutorials online that guide you through these steps.
 
 ### A few examples of VPS providers are:
@@ -33,12 +45,3 @@ This allows for alot of flexibility and freedom, but it does take a certain leve
 * Google Compute engine
   * https://cloud.google.com/compute/
   
-##PaaS
-
-Platform as a Service is some infrastructure that are provided in the Cloud (intetnet) that allows one to easily deploys ones application on the internet. Typically using some command line arguments that one can easily integrate into ones application development workflow. Tight integration with github is not uncommon with git commits and pushes used to deploy ones application. As you can see this brings the deployment process close to ones application development activities.
-
-### Deploying to Heroku
-
-The PaaS service we will be using is called Heroku (http://heroku.com/) and it can be used to deploy a wide range of application frameworks of which Node JS is one.
-
-To deploy your Spaza application register at Heroku and follow these steps: https://devcenter.heroku.com/articles/deploying-nodejs
