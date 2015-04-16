@@ -49,6 +49,8 @@ One can use SQL to create some CRUD screens to manipulates data.
 
 Now that you have a basic high level understanding of database bases and SQL work your way through this tutorial:
 
+http://www.sqlteaching.com/
+
 http://sql.learncodethehardway.org/
 
 ## Aggregating data
