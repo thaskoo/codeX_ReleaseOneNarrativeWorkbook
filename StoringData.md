@@ -79,6 +79,8 @@ app.get('/products/:id', function(req, res){
 });
 ```
 
+This translates to something like this: ```http://localhost:3000/products/77``` and it will return ```you sent me : 77``` to the browser.
+
 This is especially usefull for creating for creating edit or view pages in your web application where you can see or edit the details of an data entity.
 
 Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#specific-routing-for-specific-parameters
