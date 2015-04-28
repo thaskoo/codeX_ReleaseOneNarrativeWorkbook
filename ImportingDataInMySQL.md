@@ -12,7 +12,7 @@ Here is the dump file: [Spaza-MySQL-Dump.sql](./Spaza-MySQL-Dump.sql)
 
 To use this dump file:
 * Create a database you would like to restore the dump into
-* Then use this command: ```mysql -u root -p <database_name> < Spaza-MySQL-Dump.sql
+* Then use this command: ```mysql -u root -p <database_name> < Spaza-MySQL-Dump.sql```
 * This should create 2 tables into your target database called, ```orders_table``` and ```purchase_table```
 * Now you have some tables you can use to populate your datamodel from
 
