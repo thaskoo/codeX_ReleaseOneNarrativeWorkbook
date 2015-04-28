@@ -31,11 +31,44 @@ For example:
   </form>
 ```
 
-The web form above will send a ```POST``` request to the ```add_product``` action. The form will contain the value that was entered in the browser in the ```product_name``` field of the form.
+The web form above will send a ```POST``` request to the ```add_product``` route. The form will contain the value that was entered in the browser in the ```product_name``` field of the form.
+
+You can use CSS to style your html forms, they can be tricky to style.
 
 ## Serverside variables
 
+When one create routes in Express the route callbacks always takes two parameters, req and res. Those two variables are Request (req) and Response (res) respectively:
+
+Here is a quick example:
+
+```javascript
+app.post('/add_product', function(req, res){
+ res.render('product', {product :  data});
+});
+```
+
+In this example the response object is used to render a template to the client, but the form data is not captured yet.
+
+Now look at this example:
+
+```javascript
+app.post('/add_product', function(req, res){
+ var formData = req.body;
+ console.log(formData.product_name);
+ res.render('product', {product_name :  formData.product_name});
+});
+```
+
+It reads the form data, prints it to the console and send it to the template to be rendered back to the client.
+The example is only reading one field, but one can read all the fields that are being sent from the form to the route.
+
+**Note:*** that for form variables to work in Express you need to configure some middleware that will process the form parameters. Use the body-parser middleware : https://www.npmjs.com/package/body-parser
+
+Here's and example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#post-parameters
+
 ## Routes
+
+Forms are one way to send data to the server, but you can also use 
 
 ## Database
 
