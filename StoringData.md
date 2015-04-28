@@ -68,7 +68,20 @@ Here's and example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-pos
 
 ## Routes
 
-Forms are one way to send data to the server, but you can also use 
+Forms are one way to send data to the server, but you can also use routes to send some data to the server.
+
+For example:
+
+```
+app.get('/products/:id', function(req, res){
+  console.log(req.params.id);
+  res.send("you sent me : " + req.params.id);
+});
+```
+
+This is especially usefull for creating for creating edit or view pages in your web application where you can see or edit the details of an data entity.
+
+Here's an example: https://scotch.io/tutorials/use-expressjs-to-get-url-and-post-parameters#specific-routing-for-specific-parameters
 
 ## Database
 
