@@ -8,4 +8,6 @@ Once the data is in your database you then need to write some insert statements 
 
 To safe you some time here is a MySQL dump that already contains some data for Nelissa's Sales and Purchase history. You can use them as a baseline for your database. 
 
-Here is the dump file:
+Here is the dump file: ./Spaza-MySQL-Dump.sql
+
+
