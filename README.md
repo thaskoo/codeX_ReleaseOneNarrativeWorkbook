@@ -27,9 +27,9 @@ Now do this [Node Tutorial](node-tutorial/README.md) - you can track your progre
 * [Create online reports](./CreateOnlineReports.md)
 * [Data modelling & persistence](./DataModellingAndPersistence.md)
 * [Deployment](./Deployment.md) 
+* [Capture and store data](./StoringData.md)
 
 ## Things to come
-* [Update data](./)
 * [Create Interactive website](./)
 * [Create a secure web site](./)
 * [Create an API](./)
