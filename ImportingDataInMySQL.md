@@ -10,4 +10,9 @@ To safe you some time here is a MySQL dump that already contains some data for N
 
 Here is the dump file: [Spaza-MySQL-Dump.sql](./Spaza-MySQL-Dump.sql)
 
+To use this dump file:
+* Create a database you would like to restore the dump into
+* Then use this command: ```mysql -u root -p <database_name> < Spaza-MySQL-Dump.sql
+* This should create 2 tables into your target database called ...
 
+ 
