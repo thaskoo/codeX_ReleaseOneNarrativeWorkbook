@@ -1,0 +1,3 @@
+#Capture and storing data
+
+So far you have spend alot of time and effort slicing and dicing data. You started of using a CSV file as a datasource which you then migrated into a database....
