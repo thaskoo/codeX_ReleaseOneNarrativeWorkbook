@@ -86,7 +86,7 @@ Now for a more advanced implementation allows:
 * Redirect a user back to the login screen with a message if their login attempt failed
 * A user to register:
   * Store user details in a database table
-  * Encrypt the user password - tip look at the ```bcrypt``` module.
+  * Encrypt the user password - tip look at the ```bcrypt``` module in npm : https://www.npmjs.com/package/bcrypt-nodejs
 * Lock the users account if it supplies the wrong password 3 times in a row.
 * A user to logout
 
