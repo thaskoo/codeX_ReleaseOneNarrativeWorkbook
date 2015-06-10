@@ -80,6 +80,33 @@ Now use your database knowledge to:
 * import the CSV files you have from Nelisa into the database
 * change your web application to use the database
 
+### Import data using a sqldump file:
+
+One can use the ```mysqldump``` utility to export and import data into a database. There is a mysql dump file added to  this repository that you can use as a starting point for your Nelisa's database, it's called ```Spaza-MySQL-Dump.sql```. 
+
+You can use it like this
+
+Type in the terminal:
+
+```
+mysql -u root -p
+```
+
+Then do:
+
+```
+mysql> create database <you db name>;
+mysql> use <your db name>;
+mysql> source Spaza-MySQL-Dump.sql;
+```
+
+You can import the dump file from the terminal using ```mysqldump``` as well.
+
+After importing the dump file into your database you should have two tables in your database:
+* sales_csv
+* stock_purchases_csv
+
+
 > Aggregate functions will be very usefull.
 
 Here is a basic CRUD overview:
