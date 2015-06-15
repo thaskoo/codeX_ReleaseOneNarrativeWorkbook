@@ -114,19 +114,20 @@ Now that you have a database that contains the data from the CSV file we have a 
 
 * Create a datamodel that includes a table for Sales, Purchases, Products, Categories and Suppliers. 
    * Be sure that the tables relates to each other correctly using foreign keys.
-   * The datamodel should be created using a script file. A text file with a .sql extension
+   * The datamodel should be created using a script file. A text file with a .sql extension, store this file in the root of your project.
    
 * Populate the datamodel using the data in the CSV tables
    * Populate Products & Categories:  
      * Create insert scripts to create data for the Categories table
      * Create insert scripts that will create Products linked to their Categories
+        * You can create the distinct sql statement to create a unique list of Products  
    * Populate the Sales table:
      * Use the ```sales_csv``` table joined with the ```Products``` table to insert the correct foreign keys into the Products table
      * Use a insert statement with a select statement - http://stackoverflow.com/questions/5391344/insert-with-select
      * Join the ```sales_csv``` and the ```Products``` table on the product name column to get the product id to use as the foreign key in the Products table. 
-
-
-
+   *  Populate the Sales & Supplier table
+     * Populate the Supplier tables from the data in the ```stock_purchases_csv``` table - use the select insert method described above. Using ```select distict``` will help you to get a unique list of suppliers.
+     * Join the Products and the Suppliers tables using the Product and Supplier Names to get the appropriate foreign keys. 
 
 > Aggregate functions will be very usefull.
 
