@@ -106,6 +106,23 @@ After importing the dump file into your database you should have two tables in y
 * sales_csv
 * stock_purchases_csv
 
+## Next steps
+
+Now that you have a database that contains the data from the CSV file we have a base to start our datamodel from. When creating a datamodel one needs to be sure that one removes all repetition, when changing the product name one should only need to do it in one place. The process of removing data repitition is called Normalization (https://en.wikipedia.org/wiki/Data_normalization). So we need to create tables for all the different entities and and be sure they relate to each other correctly. Relationships between tables are created using fields, a primary key in one table can be stored as  foreign key table in another table to create a datamodel. Datamodels enables us to reflect the data storage needs of systems to store and retrieve data effectively.
+
+###Follow these steps:
+
+* Create a datamodel that includes a table for Sales, Purchases, Products, Categories and Suppliers. 
+  * Be sure that the tables relates to each other correctly using foreign keys.
+  * The datamodel should be created using a script file. A text file with a .sql extension
+* Populate the datamodel using the data in the CSV tables
+  * Populate Products & Categories:  
+   * Create insert scripts to create data for the Categories table
+   * Create insert scripts that will create Products linked to their Categories
+
+
+
+
 
 > Aggregate functions will be very usefull.
 
