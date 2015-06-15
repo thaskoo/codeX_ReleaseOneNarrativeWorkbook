@@ -65,11 +65,15 @@ Some more details:
 
 ## MySQL
 
-For our project we would like to use MySQL which is an open source database that is used widely.
+For our project we will use the widely used open source MySQL database:
 
 Here is a basic tutorial to get going:
 
 https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial
+
+Now let's see how to use it in combination with:
+
+https://github.com/codex-academy/codeX_BasicCRUDExample
 
 ## Data model & CRUD for Nelisa
 
@@ -110,7 +114,7 @@ After importing the dump file into your database you should have two tables in y
 
 Now that you have a database that contains the data from the CSV file we have a base to start our datamodel from. When creating a datamodel one needs to be sure that one removes all repetition, when changing the product name one should only need to do it in one place. The process of removing data repitition is called Normalization (https://en.wikipedia.org/wiki/Data_normalization). So we need to create tables for all the different entities and and be sure they relate to each other correctly. Relationships between tables are created using fields, a primary key in one table can be stored as  foreign key table in another table to create a datamodel. Datamodels enables us to reflect the data storage needs of systems to store and retrieve data effectively.
 
-###Follow these steps:
+###To populate the database:
 
 * Create a datamodel that includes a table for Sales, Purchases, Products, Categories and Suppliers. 
    * Be sure that the tables relates to each other correctly using foreign keys.
@@ -125,15 +129,13 @@ Now that you have a database that contains the data from the CSV file we have a 
      * Use the ```sales_csv``` table joined with the ```Products``` table to insert the correct foreign keys into the Products table
      * Use a insert statement with a select statement - http://stackoverflow.com/questions/5391344/insert-with-select
      * Join the ```sales_csv``` and the ```Products``` table on the product name column to get the product id to use as the foreign key in the Products table. 
-   *  Populate the Sales & Supplier table
+   *  Populate the Sales & Supplier tables
      * Populate the Supplier tables from the data in the ```stock_purchases_csv``` table - use the select insert method described above. Using ```select distict``` will help you to get a unique list of suppliers.
      * Join the Products and the Suppliers tables using the Product and Supplier Names to get the appropriate foreign keys. 
 
-> Aggregate functions will be very usefull.
+###Use the database
 
-Here is a basic CRUD overview:
-
-https://github.com/codex-academy/codeX_BasicCRUDExample
+Now use the datase you just created to answers Nelisa's questions about her data. You will need to use joins to use data from the various tables. Aggregate functions such as SUM, COUNT and AVERAGE in combination with the ```GROUP BY``` clause will make it easy for you to calculate the most popular product and category and the other data Nelisa requires.
 
 ## Node database packages:
 
