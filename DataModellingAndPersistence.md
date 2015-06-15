@@ -71,7 +71,11 @@ Here is a basic tutorial to get going:
 
 https://www.digitalocean.com/community/tutorials/a-basic-mysql-tutorial
 
-Now let's see how to use it in combination with:
+## MySQL and Node JS
+
+Now let's see how to use MySQL with NodeJS to Create, Read, Update and Delete (CRUD) data.
+
+Work your way through this example:
 
 https://github.com/codex-academy/codeX_BasicCRUDExample
 
@@ -140,5 +144,4 @@ Now use the datase you just created to answers Nelisa's questions about her data
 ## Node database packages:
 
 https://www.npmjs.com/package/sqlite3
-
 https://www.npmjs.com/package/mysql
