@@ -143,5 +143,5 @@ Now use the datase you just created to answers Nelisa's questions about her data
 
 ## Node database packages:
 
-https://www.npmjs.com/package/sqlite3
-https://www.npmjs.com/package/mysql
+* https://www.npmjs.com/package/sqlite3
+* https://www.npmjs.com/package/mysql
