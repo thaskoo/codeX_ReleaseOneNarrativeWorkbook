@@ -22,27 +22,29 @@ The PaaS service we will be using is called Heroku (http://heroku.com/) and it c
 
 To deploy your Spaza application register at Heroku and follow these steps: https://devcenter.heroku.com/articles/deploying-nodejs
 
-##VPS providers
+##IaaS
 
-Virtual Private Servers provides you with dedicated servers in the cloud that one needs to configure oneself. 
-This allows for alot of flexibility and freedom, but it does take a certain level of skills as you need to configure everything yourself. This include the firewall, database and web server setup. This sounds quite daunting, but there are a lots of tutorials online that guide you through these steps.
+Infrastructure as a Service(IaaS) is server infrastructure that is provided as as a service in the cloud. Virtual Private Servers(VPS) provides you with dedicated servers in the cloud that you configure. This allows for flexibility and freedom, but it does assume a certain level of skills to configure everything. The typical server configuration  includes the firewall, database and web server setup. This might sounds quite daunting, but there are a lots of tutorials online that guide you through these steps.
 
 ### A few examples of VPS providers are:
 
-* Digital Ocean 
-  * https://www.digitalocean.com
-  * They have very good tutorials : https://www.digitalocean.com/community/tutorials
-  Here are some tutorials you will need to setup a server to run NodeJS, Nginx and Mysql: 
+* Digital Ocean
+
+Digital Ocean is an IaaS provider which provides VPS's
+
+You can find them at https://www.digitalocean.com 
+They have very good tutorials : https://www.digitalocean.com/community/tutorials
+
+Here are some tutorials you will need to setup a server to run NodeJS, Nginx and Mysql: 
    * https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
    * https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
 
-  
 * Afrihost 
-  * They are a South African company
+  * They are a South African company that provide IaaS.
   * https://www.afrihost.com/site/product/cloud_hosting
   
 * Amazon Web Services
-  * A big international online retailer
+  * A big international online retailer also provides IaaS
   * Based in Cape Town - by the way
   * ws.amazon.com/free
 
