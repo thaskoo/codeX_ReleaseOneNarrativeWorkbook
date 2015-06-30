@@ -32,6 +32,10 @@ This allows for alot of flexibility and freedom, but it does take a certain leve
 * Digital Ocean 
   * https://www.digitalocean.com
   * They have very good tutorials : https://www.digitalocean.com/community/tutorials
+  Here are some tutorials you will need to setup a server to run NodeJS, Nginx and Mysql: 
+   * https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
+   * https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
+
   
 * Afrihost 
   * They are a South African company
