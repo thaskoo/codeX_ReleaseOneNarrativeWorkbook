@@ -39,6 +39,8 @@ Here are some tutorials you will need to setup a server to run NodeJS, Nginx and
    * https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-14-04
    * https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu
 
+  You will need to follow some of these tutorials piece meal as we as not using Apache as a web server or going to setup PhpMyAdmin on the VPS.
+
 * Afrihost 
   * They are a South African company that provide IaaS.
   * https://www.afrihost.com/site/product/cloud_hosting
