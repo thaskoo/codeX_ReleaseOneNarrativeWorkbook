@@ -128,9 +128,9 @@ Now that you have a database that contains the data from the CSV file we have a 
    * Populate Products & Categories:  
      * Create insert scripts to create data for the Categories table
      * Create insert scripts that will create Products linked to their Categories
-        * You can create the distinct sql statement to create a unique list of Products  
+        * You can use the ```distinct``` sql statement to create a unique list of Products  
    * Populate the Sales table:
-     * Use the ```sales_csv``` table joined with the ```Products``` table to insert the correct foreign keys into the Products table
+     * Use the ```sales_csv``` table joined with the ```Products``` table to insert the correct foreign keys into the Sales table
      * Use a insert statement with a select statement - http://stackoverflow.com/questions/5391344/insert-with-select
      * Join the ```sales_csv``` and the ```Products``` table on the product name column to get the product id to use as the foreign key in the Products table. 
    *  Populate the Sales & Supplier tables
