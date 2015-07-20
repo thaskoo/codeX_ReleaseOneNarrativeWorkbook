@@ -18,14 +18,14 @@ var fs = require('fs'); //calling the modules
 
  	 	  rows.forEach(function(row){
 
- 	 	  	var productName = row.split(',')[1];
+ 	 	  	var productName = row.split(',')[1]; // the output must returns a list of products
 		if(productMap[productName] === undefined) {
 			listOfProducts.push(productName);
  	 				productMap[productName] = 0;
  	}
  });
    // now we create the unique list,
-   callback(null, listOfProducts);
+   callback(null, listOfProducts); // returns a list of products
 };
 
 
@@ -35,25 +35,28 @@ var fs = require('fs'); //calling the modules
 
  	console.log(rowsInFile.length);
 
- 	var productQuantity = []; //--> an empty array because we will have the quantity
+ 	var productQuantity = []; //--> an empty array because we will have the quantity here
 
  	var quantityMap = {};
 
  	rowsInFile.forEach(function(row) {
 
- 		var fields = row.split(','); // we want our rows to be in a fiels
+ 		var fields = row.split(','); // we want our rows to be in a fields
 
  		var currentProduct = fields[1];
  		var productQuantity = fields[2];
 
  		console.log( " fields : " + JSON.stringify(fields));
+ 	 //JSON.stringify turns an object in to a JSON text and stores that JSON text in a string.
  			if(quantityMap[currentProduct] === undefined) {
  	 				quantityMap[currentProduct] = 0;
  	 			}
+
  	 			quantityMap[currentProduct] = quantityMap[currentProduct] + Number(productQuantity);
  	 		});
  	console.log( "-----> " + JSON.stringify(quantityMap));
- 	callback(null, quantityMap);
+ 	 //the output should returns a map of how many of each product is sold - mapping productName to quantity sold.
+ 	callback(null, quantityMap); //mapping productName to quantity sold.
  };
 
 };
